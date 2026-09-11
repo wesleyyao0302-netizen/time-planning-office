@@ -1,11 +1,11 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//时间规划办公室//Skun//ZH-CN
+PRODID:-//Time Planning Office//Skun//ZH-CN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Skun - 时间规划办公室
 X-WR-TIMEZONE:Europe/London
-X-WR-CALDESC:科研 + 4周学习冲刺计划，2026年9月14日至10月11日。
+X-WR-CALDESC:科研 + 4周课程冲刺计划（2026年9月14日–10月11日）。
 BEGIN:VTIMEZONE
 TZID:Europe/London
 X-LIC-LOCATION:Europe/London
@@ -31,7 +31,7 @@ DTSTART;TZID=Europe/London:20260916T120000
 DTEND;TZID=Europe/London:20260916T130000
 RRULE:FREQ=WEEKLY;BYDAY=WE
 SUMMARY:每周组会
-LOCATION:JWS 387室
+LOCATION:JWS Room 387
 DESCRIPTION:每周科研组会。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -43,18 +43,7 @@ DTSTART;TZID=Europe/London:20260914T090000
 DTEND;TZID=Europe/London:20260914T120000
 RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
 SUMMARY:科研深度工作
-DESCRIPTION:受保护的科研时间：推进当前科研任务、数据分析、实验、编程、论文以及 NESO/SPEN 相关工作。
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:core-learning@time-planning-office
-DTSTAMP:20260912T000000Z
-DTSTART;TZID=Europe/London:20260914T140000
-DTEND;TZID=Europe/London:20260914T160000
-RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
-SUMMARY:核心课程学习
-DESCRIPTION:按照本周重点学习 Python、MATLAB、电力电子或 Simulink。优先理解核心概念并做主动笔记。
+DESCRIPTION:保护性科研时间：当前研究任务、数据分析、实验、代码、论文，以及 NESO / SPEN 相关工作。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -65,7 +54,7 @@ DTSTART;TZID=Europe/London:20260914T161500
 DTEND;TZID=Europe/London:20260914T174500
 RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
 SUMMARY:编程 / Simulink 实操
-DESCRIPTION:实操时间。当天至少产出可运行的代码、图表或 Simulink 模型，不只观看视频。
+DESCRIPTION:复现当天课程内容。至少产出一个可运行代码、图表或 Simulink 模型，不只看视频。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -76,7 +65,7 @@ DTSTART;TZID=Europe/London:20260914T193000
 DTEND;TZID=Europe/London:20260914T210000
 RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
 SUMMARY:轻量复习 / 整理笔记
-DESCRIPTION:只安排轻量视频、笔记、知识回顾或记忆卡片。21:00 后停止高强度工作。
+DESCRIPTION:复习当天课程、整理笔记、回顾重点。21:00 后停止高强度任务。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -87,7 +76,7 @@ DTSTART;TZID=Europe/London:20260916T090000
 DTEND;TZID=Europe/London:20260916T110000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
 SUMMARY:组会准备
-DESCRIPTION:整理科研进展、图表、问题和下一步计划，为中午组会做准备。
+DESCRIPTION:整理研究进展、图表、问题和下一步决策，准备中午组会。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -98,29 +87,7 @@ DTSTART;TZID=Europe/London:20260916T140000
 DTEND;TZID=Europe/London:20260916T170000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
 SUMMARY:科研推进 / 组会反馈落实
-DESCRIPTION:根据组会反馈采取行动，优先推进最重要的科研任务。
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:wednesday-light-study@time-planning-office
-DTSTAMP:20260912T000000Z
-DTSTART;TZID=Europe/London:20260916T193000
-DTEND;TZID=Europe/London:20260916T210000
-RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
-SUMMARY:轻量课程学习
-DESCRIPTION:只进行低强度学习，围绕本周主题补充课程内容。
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-END:VEVENT
-BEGIN:VEVENT
-UID:weekend-core-learning@time-planning-office
-DTSTAMP:20260912T000000Z
-DTSTART;TZID=Europe/London:20260919T090000
-DTEND;TZID=Europe/London:20260919T120000
-RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
-SUMMARY:周末核心课程学习
-DESCRIPTION:集中完成本周主要课程内容，并用于补课或强化重点。
+DESCRIPTION:根据组会反馈推进当前最高优先级科研任务。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -131,7 +98,7 @@ DTSTART;TZID=Europe/London:20260919T140000
 DTEND;TZID=Europe/London:20260919T170000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
 SUMMARY:仿真 / 编程项目
-DESCRIPTION:至少完成一个可运行的脚本、模型、图表或仿真结果。
+DESCRIPTION:围绕本周课程完成至少一个可运行脚本、模型、图表或仿真。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -142,7 +109,7 @@ DTSTART;TZID=Europe/London:20260919T193000
 DTEND;TZID=Europe/London:20260919T203000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
 SUMMARY:每周笔记整理
-DESCRIPTION:整理本周笔记、列出未解决问题，并记录已经可以直接用于科研的知识和技能。
+DESCRIPTION:整理笔记、列出未解决问题，并记录哪些知识已能用于科研。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -153,7 +120,7 @@ DTSTART;TZID=Europe/London:20260920T100000
 DTEND;TZID=Europe/London:20260920T120000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SU
 SUMMARY:每周复盘
-DESCRIPTION:复盘学习与科研进度，识别知识缺口，并确定下一周优先级。
+DESCRIPTION:复盘本周学习与科研进展，识别缺口并确定下一周优先级。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -164,7 +131,247 @@ DTSTART;TZID=Europe/London:20260920T140000
 DTEND;TZID=Europe/London:20260920T160000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SU
 SUMMARY:补课 / 弹性时间
-DESCRIPTION:用于未完成的课程、科研任务溢出；如果进度正常，则作为休息时间。
+DESCRIPTION:仅用于未完成课程、科研溢出任务；若进度正常则用于休息。
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260914@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260914T140000
+DTEND;TZID=Europe/London:20260914T160000
+SUMMARY:课程学习｜Python｜环境、变量、数据类型、基本运算
+DESCRIPTION:本次学习内容：环境、变量、数据类型、基本运算\n课程：Python\n课程链接：https://www.bilibili.com/video/BV1c4411e77t
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260915@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260915T140000
+DTEND;TZID=Europe/London:20260915T160000
+SUMMARY:课程学习｜MATLAB｜界面、变量、矩阵输入与基本运算
+DESCRIPTION:本次学习内容：界面、变量、矩阵输入与基本运算\n课程：MATLAB\n课程链接：https://www.bilibili.com/video/BV1GJ41137UH
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260916@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260916T193000
+DTEND;TZID=Europe/London:20260916T210000
+SUMMARY:课程学习｜电力电子｜CH1 电力电子基础应用：应用场景、能量变换、基本拓扑概念
+DESCRIPTION:本次学习内容：CH1 电力电子基础应用：应用场景、能量变换、基本拓扑概念\n课程：电力电子\n课程链接：https://www.bilibili.com/video/BV1Hx4y1w7rW
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260917@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260917T140000
+DTEND;TZID=Europe/London:20260917T160000
+SUMMARY:课程学习｜Python｜条件判断、for/while 循环、列表与元组
+DESCRIPTION:本次学习内容：条件判断、for/while 循环、列表与元组\n课程：Python\n课程链接：https://www.bilibili.com/video/BV1c4411e77t
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260918@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260918T140000
+DTEND;TZID=Europe/London:20260918T160000
+SUMMARY:课程学习｜电力电子｜CH2.1 Buck、小纹波近似、伏秒/安秒平衡
+DESCRIPTION:本次学习内容：CH2.1 Buck、小纹波近似、伏秒/安秒平衡\n课程：电力电子\n课程链接：https://www.bilibili.com/video/BV1Hx4y1w7rW
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260919@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260919T090000
+DTEND;TZID=Europe/London:20260919T120000
+SUMMARY:课程学习｜MATLAB + Python｜MATLAB函数与绘图；Python函数、文件与基础数据处理
+DESCRIPTION:本次学习内容：MATLAB函数与绘图；Python函数、文件与基础数据处理\n课程：MATLAB + Python\n课程链接：https://www.bilibili.com/video/BV1GJ41137UH | https://www.bilibili.com/video/BV1c4411e77t
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260921@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260921T140000
+DTEND;TZID=Europe/London:20260921T160000
+SUMMARY:课程学习｜电力电子｜CH2.2 Boost、Cuk 与纹波计算
+DESCRIPTION:本次学习内容：CH2.2 Boost、Cuk 与纹波计算\n课程：电力电子\n课程链接：https://www.bilibili.com/video/BV1Hx4y1w7rW
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260922@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260922T140000
+DTEND;TZID=Europe/London:20260922T160000
+SUMMARY:课程学习｜电力电子｜CH3 变换器直流模型；平均值与等效建模
+DESCRIPTION:本次学习内容：CH3 变换器直流模型；平均值与等效建模\n课程：电力电子\n课程链接：https://www.bilibili.com/video/BV1Hx4y1w7rW
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260923@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260923T193000
+DTEND;TZID=Europe/London:20260923T210000
+SUMMARY:课程学习｜电力电子｜CH4 功率器件：二极管、MOSFET、IGBT、晶闸管、宽禁带器件
+DESCRIPTION:本次学习内容：CH4 功率器件：二极管、MOSFET、IGBT、晶闸管、宽禁带器件\n课程：电力电子\n课程链接：https://www.bilibili.com/video/BV1Hx4y1w7rW
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260924@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260924T140000
+DTEND;TZID=Europe/London:20260924T160000
+SUMMARY:课程学习｜电力电子｜CH5–CH8：DCM、磁性元件、拓扑衍生、隔离/非隔离 DC/DC
+DESCRIPTION:本次学习内容：CH5–CH8：DCM、磁性元件、拓扑衍生、隔离/非隔离 DC/DC\n课程：电力电子\n课程链接：https://www.bilibili.com/video/BV1Hx4y1w7rW
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260925@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260925T140000
+DTEND;TZID=Europe/London:20260925T160000
+SUMMARY:课程学习｜电力电子｜CH9–CH13：整流、谐波/PFC、方波逆变、PWM逆变
+DESCRIPTION:本次学习内容：CH9–CH13：整流、谐波/PFC、方波逆变、PWM逆变\n课程：电力电子\n课程链接：https://www.bilibili.com/video/BV1Hx4y1w7rW
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260926@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260926T090000
+DTEND;TZID=Europe/London:20260926T120000
+SUMMARY:课程学习｜黑库仿真｜单相/三相整流、Buck、反激、正激、逆变器仿真
+DESCRIPTION:本次学习内容：单相/三相整流、Buck、反激、正激、逆变器仿真\n课程：黑库仿真\n课程链接：https://www.bilibili.com/video/BV1xz411B7cV
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260928@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260928T140000
+DTEND;TZID=Europe/London:20260928T160000
+SUMMARY:课程学习｜Simulink｜建模工作流、Subsystem、输入输出、积分器、基础动态系统
+DESCRIPTION:本次学习内容：建模工作流、Subsystem、输入输出、积分器、基础动态系统\n课程：Simulink\n课程链接：https://www.bilibili.com/video/BV1L7411a7uL
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260929@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260929T140000
+DTEND;TZID=Europe/London:20260929T160000
+SUMMARY:课程学习｜Simulink｜Transfer Function、State Space、PID、连续/离散系统
+DESCRIPTION:本次学习内容：Transfer Function、State Space、PID、连续/离散系统\n课程：Simulink\n课程链接：https://www.bilibili.com/video/BV1L7411a7uL
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20260930@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260930T193000
+DTEND;TZID=Europe/London:20260930T210000
+SUMMARY:课程学习｜Simulink｜Delay、Filter、Logic、Lookup Table、信号路由与 Scope
+DESCRIPTION:本次学习内容：Delay、Filter、Logic、Lookup Table、信号路由与 Scope\n课程：Simulink\n课程链接：https://www.bilibili.com/video/BV1L7411a7uL
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261001@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261001T140000
+DTEND;TZID=Europe/London:20261001T160000
+SUMMARY:课程学习｜Simulink｜Workspace/File、Signal Source、MATLAB Function、S-Function
+DESCRIPTION:本次学习内容：Workspace/File、Signal Source、MATLAB Function、S-Function\n课程：Simulink\n课程链接：https://www.bilibili.com/video/BV1L7411a7uL
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261002@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261002T140000
+DTEND;TZID=Europe/London:20261002T160000
+SUMMARY:课程学习｜蓝库仿真｜器件静/动态特性、非隔离/隔离 DC/DC、单相/三相逆变
+DESCRIPTION:本次学习内容：器件静/动态特性、非隔离/隔离 DC/DC、单相/三相逆变\n课程：蓝库仿真\n课程链接：https://www.bilibili.com/video/BV11z4y1T734
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261003@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261003T090000
+DTEND;TZID=Europe/London:20261003T120000
+SUMMARY:课程学习｜蓝库仿真｜三相相控整流、PWM并网逆变与整流、交流调压与变频
+DESCRIPTION:本次学习内容：三相相控整流、PWM并网逆变与整流、交流调压与变频\n课程：蓝库仿真\n课程链接：https://www.bilibili.com/video/BV11z4y1T734
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261005@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261005T140000
+DTEND;TZID=Europe/London:20261005T160000
+SUMMARY:课程学习｜研究生电力电子｜本科知识回顾 + 谐振变换器基础
+DESCRIPTION:本次学习内容：本科知识回顾 + 谐振变换器基础\n课程：研究生电力电子\n课程链接：https://www.bilibili.com/video/BV1b24y1d7zu
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261006@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261006T140000
+DTEND;TZID=Europe/London:20261006T160000
+SUMMARY:课程学习｜研究生电力电子｜串联/并联/LCC 谐振变换器
+DESCRIPTION:本次学习内容：串联/并联/LCC 谐振变换器\n课程：研究生电力电子\n课程链接：https://www.bilibili.com/video/BV1b24y1d7zu
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261007@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261007T193000
+DTEND;TZID=Europe/London:20261007T210000
+SUMMARY:课程学习｜研究生电力电子｜LLC 谐振变换器：工作区间与基本机理
+DESCRIPTION:本次学习内容：LLC 谐振变换器：工作区间与基本机理\n课程：研究生电力电子\n课程链接：https://www.bilibili.com/video/BV1b24y1d7zu
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261008@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261008T140000
+DTEND;TZID=Europe/London:20261008T160000
+SUMMARY:课程学习｜研究生电力电子｜ZCS / ZVS / 软开关机理
+DESCRIPTION:本次学习内容：ZCS / ZVS / 软开关机理\n课程：研究生电力电子\n课程链接：https://www.bilibili.com/video/BV1b24y1d7zu
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261009@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261009T140000
+DTEND;TZID=Europe/London:20261009T160000
+SUMMARY:课程学习｜研究生电力电子｜多谐振、无线电能传输、高频逆变/整流
+DESCRIPTION:本次学习内容：多谐振、无线电能传输、高频逆变/整流\n课程：研究生电力电子\n课程链接：https://www.bilibili.com/video/BV1b24y1d7zu
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:study-20261010@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20261010T090000
+DTEND;TZID=Europe/London:20261010T120000
+SUMMARY:课程学习｜综合复习｜Python + MATLAB + Simulink + 电力电子知识串联；完成一个综合仿真
+DESCRIPTION:本次学习内容：Python + MATLAB + Simulink + 电力电子知识串联；完成一个综合仿真\n课程：综合复习\n课程链接：https://www.bilibili.com/
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -173,8 +380,8 @@ UID:week-1-focus@time-planning-office
 DTSTAMP:20260912T000000Z
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260921
-SUMMARY:第1周重点 — Python + MATLAB + 电力电子 CH1–CH4
-DESCRIPTION:Python 基础、MATLAB 基础、电力电子 CH1–CH4。目标：掌握基础编程、矩阵/函数/绘图，以及 Buck、Boost、CCM 和功率器件基础。
+SUMMARY:第1周重点｜Python + MATLAB + 电力电子 CH1–CH4
+DESCRIPTION:Python基础；MATLAB基础；电力电子 CH1–CH4。目标：掌握基础编程、矩阵/函数/绘图、Buck/Boost/CCM 与功率器件。
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -182,8 +389,8 @@ UID:week-2-focus@time-planning-office
 DTSTAMP:20260912T000000Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260928
-SUMMARY:第2周重点 — 本科电力电子 + 黑库仿真
-DESCRIPTION:完成本科电力电子核心内容，并同步完成 MATLAB/Simulink 黑库仿真。重点搭建 Buck、Boost、Flyback、整流器和逆变器模型。
+SUMMARY:第2周重点｜本科电力电子 + 黑库仿真
+DESCRIPTION:完成本科电力电子主线，并用黑库同步复现整流、Buck、Boost、Flyback、Forward 与逆变。
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -191,8 +398,8 @@ UID:week-3-focus@time-planning-office
 DTSTAMP:20260912T000000Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20261005
-SUMMARY:第3周重点 — Simulink + 蓝库进阶仿真
-DESCRIPTION:掌握 Simulink 建模流程和蓝库进阶仿真。重点学习子系统、传递函数/状态空间、PID、离散系统、MATLAB Function 和 PWM 并网变流器。
+SUMMARY:第3周重点｜Simulink + 蓝库进阶
+DESCRIPTION:掌握 Simulink 建模工作流，并重点完成 DC/DC、逆变、PWM 并网逆变与整流等蓝库内容。
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -200,8 +407,8 @@ UID:week-4-focus@time-planning-office
 DTSTAMP:20260912T000000Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261012
-SUMMARY:第4周重点 — 研究生电力电子 + 综合整合
-DESCRIPTION:研究生电力电子概览：谐振变换器、LLC、ZCS/ZVS、软开关；同时整合 Python、MATLAB、Simulink，并完成一个综合仿真。
+SUMMARY:第4周重点｜研究生电力电子 + 综合整合
+DESCRIPTION:学习谐振变换器、LLC、ZCS/ZVS、软开关，并完成 Python/MATLAB/Simulink/电力电子综合复习与一个综合仿真。
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
