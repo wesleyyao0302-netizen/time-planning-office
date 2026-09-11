@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Skun - Time Planning Office
 X-WR-TIMEZONE:Europe/London
-X-WR-CALDESC:Research, meetings, courses, deadlines, administration and personal planning managed by Time Planning Office.
+X-WR-CALDESC:Research + 4-week learning bootcamp, 14 Sep–11 Oct 2026.
 BEGIN:VTIMEZONE
 TZID:Europe/London
 X-LIC-LOCATION:Europe/London
@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:weekly-group-meeting-jws387@time-planning-office
-DTSTAMP:20260911T223900Z
+DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260916T120000
 DTEND;TZID=Europe/London:20260916T130000
 RRULE:FREQ=WEEKLY;BYDAY=WE
@@ -35,5 +35,173 @@ LOCATION:JWS Room 387
 DESCRIPTION:Weekly research group meeting.
 STATUS:CONFIRMED
 TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:research-deep-work@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260914T090000
+DTEND;TZID=Europe/London:20260914T120000
+RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
+SUMMARY:Research Deep Work
+DESCRIPTION:Protected research time: current research tasks, data analysis, experiments, coding, papers, NESO/SPEN-related work.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:core-learning@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260914T140000
+DTEND;TZID=Europe/London:20260914T160000
+RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
+SUMMARY:Core Learning
+DESCRIPTION:Follow this week's focus: Python/MATLAB/Power Electronics/Simulink. Prioritise understanding and active notes.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:coding-simulink-practice@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260914T161500
+DTEND;TZID=Europe/London:20260914T174500
+RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
+SUMMARY:Coding / Simulink Practice
+DESCRIPTION:Hands-on block. Produce working code, a plot, or a Simulink model rather than only watching video.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:light-review@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260914T193000
+DTEND;TZID=Europe/London:20260914T210000
+RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
+SUMMARY:Light Review / Notes
+DESCRIPTION:Light video, notes, recap or flashcards. Stop hard work after 21:00.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:group-meeting-prep@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260916T090000
+DTEND;TZID=Europe/London:20260916T110000
+RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
+SUMMARY:Group Meeting Preparation
+DESCRIPTION:Prepare progress, figures, questions and next-step decisions for the noon group meeting.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:meeting-followup@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260916T140000
+DTEND;TZID=Europe/London:20260916T170000
+RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
+SUMMARY:Research / Meeting Follow-up
+DESCRIPTION:Act on group-meeting feedback and push the highest-priority research task.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:wednesday-light-study@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260916T193000
+DTEND;TZID=Europe/London:20260916T210000
+RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
+SUMMARY:Light Study
+DESCRIPTION:Low-intensity learning only. Use the current week's focus.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:weekend-core-learning@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260919T090000
+DTEND;TZID=Europe/London:20260919T120000
+RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
+SUMMARY:Weekend Core Learning
+DESCRIPTION:Main catch-up / concentrated course block for the current week's focus.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulation-coding-project@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260919T140000
+DTEND;TZID=Europe/London:20260919T170000
+RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
+SUMMARY:Simulation / Coding Project
+DESCRIPTION:Produce at least one working script, model, figure or simulation.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:weekly-notes@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260919T193000
+DTEND;TZID=Europe/London:20260919T203000
+RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
+SUMMARY:Weekly Notes Consolidation
+DESCRIPTION:Clean notes, list unresolved questions, and record what can already be used in research.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:weekly-review@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260920T100000
+DTEND;TZID=Europe/London:20260920T120000
+RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SU
+SUMMARY:Weekly Review
+DESCRIPTION:Review learning and research progress; identify gaps and decide next week's priorities.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:catchup-flex@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;TZID=Europe/London:20260920T140000
+DTEND;TZID=Europe/London:20260920T160000
+RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SU
+SUMMARY:Catch-up / Flexible Block
+DESCRIPTION:Use only for unfinished learning, research overflow, or rest if everything is on track.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:week-1-focus@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260921
+SUMMARY:Week 1 Focus — Python + MATLAB + PE CH1–CH4
+DESCRIPTION:Python foundations; MATLAB basics; Power Electronics CH1–CH4. Goal: code basics, matrices/functions/plots, Buck/Boost/CCM and switching devices.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:week-2-focus@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260928
+SUMMARY:Week 2 Focus — Undergraduate Power Electronics + Black Library
+DESCRIPTION:Finish undergraduate power-electronics core and pair theory with MATLAB/Simulink black-library simulations. Build Buck, Boost, Flyback, rectifier and inverter models.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:week-3-focus@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261005
+SUMMARY:Week 3 Focus — Simulink + Blue Library
+DESCRIPTION:Simulink modelling workflow plus advanced blue-library simulations. Prioritise subsystem, transfer function/state-space, PID, discrete systems, MATLAB Function and PWM grid converter.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:week-4-focus@time-planning-office
+DTSTAMP:20260912T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261012
+SUMMARY:Week 4 Focus — Graduate Power Electronics + Integration
+DESCRIPTION:Graduate power-electronics overview: resonant converters, LLC, ZCS/ZVS, soft switching; consolidate Python/MATLAB/Simulink and complete one integrated simulation.
+TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
