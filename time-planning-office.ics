@@ -1,11 +1,11 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Time Planning Office//Skun//EN
+PRODID:-//时间规划办公室//Skun//ZH-CN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Skun - Time Planning Office
+X-WR-CALNAME:Skun - 时间规划办公室
 X-WR-TIMEZONE:Europe/London
-X-WR-CALDESC:Research + 4-week learning bootcamp, 14 Sep–11 Oct 2026.
+X-WR-CALDESC:科研 + 4周学习冲刺计划，2026年9月14日至10月11日。
 BEGIN:VTIMEZONE
 TZID:Europe/London
 X-LIC-LOCATION:Europe/London
@@ -30,9 +30,9 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260916T120000
 DTEND;TZID=Europe/London:20260916T130000
 RRULE:FREQ=WEEKLY;BYDAY=WE
-SUMMARY:Weekly Group Meeting
-LOCATION:JWS Room 387
-DESCRIPTION:Weekly research group meeting.
+SUMMARY:每周组会
+LOCATION:JWS 387室
+DESCRIPTION:每周科研组会。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -42,8 +42,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260914T090000
 DTEND;TZID=Europe/London:20260914T120000
 RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
-SUMMARY:Research Deep Work
-DESCRIPTION:Protected research time: current research tasks, data analysis, experiments, coding, papers, NESO/SPEN-related work.
+SUMMARY:科研深度工作
+DESCRIPTION:受保护的科研时间：推进当前科研任务、数据分析、实验、编程、论文以及 NESO/SPEN 相关工作。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -53,8 +53,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260914T140000
 DTEND;TZID=Europe/London:20260914T160000
 RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
-SUMMARY:Core Learning
-DESCRIPTION:Follow this week's focus: Python/MATLAB/Power Electronics/Simulink. Prioritise understanding and active notes.
+SUMMARY:核心课程学习
+DESCRIPTION:按照本周重点学习 Python、MATLAB、电力电子或 Simulink。优先理解核心概念并做主动笔记。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -64,8 +64,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260914T161500
 DTEND;TZID=Europe/London:20260914T174500
 RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
-SUMMARY:Coding / Simulink Practice
-DESCRIPTION:Hands-on block. Produce working code, a plot, or a Simulink model rather than only watching video.
+SUMMARY:编程 / Simulink 实操
+DESCRIPTION:实操时间。当天至少产出可运行的代码、图表或 Simulink 模型，不只观看视频。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -75,8 +75,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260914T193000
 DTEND;TZID=Europe/London:20260914T210000
 RRULE:FREQ=WEEKLY;COUNT=16;BYDAY=MO,TU,TH,FR
-SUMMARY:Light Review / Notes
-DESCRIPTION:Light video, notes, recap or flashcards. Stop hard work after 21:00.
+SUMMARY:轻量复习 / 整理笔记
+DESCRIPTION:只安排轻量视频、笔记、知识回顾或记忆卡片。21:00 后停止高强度工作。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -86,8 +86,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260916T090000
 DTEND;TZID=Europe/London:20260916T110000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
-SUMMARY:Group Meeting Preparation
-DESCRIPTION:Prepare progress, figures, questions and next-step decisions for the noon group meeting.
+SUMMARY:组会准备
+DESCRIPTION:整理科研进展、图表、问题和下一步计划，为中午组会做准备。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -97,8 +97,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260916T140000
 DTEND;TZID=Europe/London:20260916T170000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
-SUMMARY:Research / Meeting Follow-up
-DESCRIPTION:Act on group-meeting feedback and push the highest-priority research task.
+SUMMARY:科研推进 / 组会反馈落实
+DESCRIPTION:根据组会反馈采取行动，优先推进最重要的科研任务。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -108,8 +108,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260916T193000
 DTEND;TZID=Europe/London:20260916T210000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=WE
-SUMMARY:Light Study
-DESCRIPTION:Low-intensity learning only. Use the current week's focus.
+SUMMARY:轻量课程学习
+DESCRIPTION:只进行低强度学习，围绕本周主题补充课程内容。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -119,8 +119,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260919T090000
 DTEND;TZID=Europe/London:20260919T120000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
-SUMMARY:Weekend Core Learning
-DESCRIPTION:Main catch-up / concentrated course block for the current week's focus.
+SUMMARY:周末核心课程学习
+DESCRIPTION:集中完成本周主要课程内容，并用于补课或强化重点。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -130,8 +130,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260919T140000
 DTEND;TZID=Europe/London:20260919T170000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
-SUMMARY:Simulation / Coding Project
-DESCRIPTION:Produce at least one working script, model, figure or simulation.
+SUMMARY:仿真 / 编程项目
+DESCRIPTION:至少完成一个可运行的脚本、模型、图表或仿真结果。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -141,8 +141,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260919T193000
 DTEND;TZID=Europe/London:20260919T203000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SA
-SUMMARY:Weekly Notes Consolidation
-DESCRIPTION:Clean notes, list unresolved questions, and record what can already be used in research.
+SUMMARY:每周笔记整理
+DESCRIPTION:整理本周笔记、列出未解决问题，并记录已经可以直接用于科研的知识和技能。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -152,8 +152,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260920T100000
 DTEND;TZID=Europe/London:20260920T120000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SU
-SUMMARY:Weekly Review
-DESCRIPTION:Review learning and research progress; identify gaps and decide next week's priorities.
+SUMMARY:每周复盘
+DESCRIPTION:复盘学习与科研进度，识别知识缺口，并确定下一周优先级。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -163,8 +163,8 @@ DTSTAMP:20260912T000000Z
 DTSTART;TZID=Europe/London:20260920T140000
 DTEND;TZID=Europe/London:20260920T160000
 RRULE:FREQ=WEEKLY;COUNT=4;BYDAY=SU
-SUMMARY:Catch-up / Flexible Block
-DESCRIPTION:Use only for unfinished learning, research overflow, or rest if everything is on track.
+SUMMARY:补课 / 弹性时间
+DESCRIPTION:用于未完成的课程、科研任务溢出；如果进度正常，则作为休息时间。
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT
@@ -173,8 +173,8 @@ UID:week-1-focus@time-planning-office
 DTSTAMP:20260912T000000Z
 DTSTART;VALUE=DATE:20260914
 DTEND;VALUE=DATE:20260921
-SUMMARY:Week 1 Focus — Python + MATLAB + PE CH1–CH4
-DESCRIPTION:Python foundations; MATLAB basics; Power Electronics CH1–CH4. Goal: code basics, matrices/functions/plots, Buck/Boost/CCM and switching devices.
+SUMMARY:第1周重点 — Python + MATLAB + 电力电子 CH1–CH4
+DESCRIPTION:Python 基础、MATLAB 基础、电力电子 CH1–CH4。目标：掌握基础编程、矩阵/函数/绘图，以及 Buck、Boost、CCM 和功率器件基础。
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -182,8 +182,8 @@ UID:week-2-focus@time-planning-office
 DTSTAMP:20260912T000000Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260928
-SUMMARY:Week 2 Focus — Undergraduate Power Electronics + Black Library
-DESCRIPTION:Finish undergraduate power-electronics core and pair theory with MATLAB/Simulink black-library simulations. Build Buck, Boost, Flyback, rectifier and inverter models.
+SUMMARY:第2周重点 — 本科电力电子 + 黑库仿真
+DESCRIPTION:完成本科电力电子核心内容，并同步完成 MATLAB/Simulink 黑库仿真。重点搭建 Buck、Boost、Flyback、整流器和逆变器模型。
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -191,8 +191,8 @@ UID:week-3-focus@time-planning-office
 DTSTAMP:20260912T000000Z
 DTSTART;VALUE=DATE:20260928
 DTEND;VALUE=DATE:20261005
-SUMMARY:Week 3 Focus — Simulink + Blue Library
-DESCRIPTION:Simulink modelling workflow plus advanced blue-library simulations. Prioritise subsystem, transfer function/state-space, PID, discrete systems, MATLAB Function and PWM grid converter.
+SUMMARY:第3周重点 — Simulink + 蓝库进阶仿真
+DESCRIPTION:掌握 Simulink 建模流程和蓝库进阶仿真。重点学习子系统、传递函数/状态空间、PID、离散系统、MATLAB Function 和 PWM 并网变流器。
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -200,8 +200,8 @@ UID:week-4-focus@time-planning-office
 DTSTAMP:20260912T000000Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261012
-SUMMARY:Week 4 Focus — Graduate Power Electronics + Integration
-DESCRIPTION:Graduate power-electronics overview: resonant converters, LLC, ZCS/ZVS, soft switching; consolidate Python/MATLAB/Simulink and complete one integrated simulation.
+SUMMARY:第4周重点 — 研究生电力电子 + 综合整合
+DESCRIPTION:研究生电力电子概览：谐振变换器、LLC、ZCS/ZVS、软开关；同时整合 Python、MATLAB、Simulink，并完成一个综合仿真。
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR
