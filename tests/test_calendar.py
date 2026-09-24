@@ -31,6 +31,10 @@ class CalendarTests(unittest.TestCase):
         self.assertIn("weekly-group-meeting@skun-research-time-workstation", self.calendar)
         self.assertIn("RRULE:FREQ=WEEKLY;BYDAY=WE", self.calendar)
         self.assertIn("RRULE:FREQ=WEEKLY;BYDAY=MO;COUNT=9", self.calendar)
+        self.assertIn("english-course-wednesday-2026@skun-research-time-workstation", self.calendar)
+        self.assertIn("RRULE:FREQ=WEEKLY;BYDAY=WE;COUNT=12", self.calendar)
+        self.assertIn("english-course-friday-2026@skun-research-time-workstation", self.calendar)
+        self.assertIn("RRULE:FREQ=WEEKLY;BYDAY=FR;COUNT=12", self.calendar)
 
     def test_course_locations(self) -> None:
         self.assertIn("JMS Learning Hub\\, Room 743", self.calendar)

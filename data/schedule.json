@@ -16,6 +16,24 @@
       "description": "固定组会。会前准备：本周成果、关键图表、未解决问题与下周计划。"
     },
     {
+      "id": "english-course-wednesday-2026",
+      "title": "英语课程 / English Course",
+      "start": "2026-09-30T14:00:00",
+      "end": "2026-09-30T16:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=WE;COUNT=12",
+      "categories": ["英语", "课程"],
+      "description": "每周三下午英语课程，共 12 次：2026-09-30 至 2026-12-16。"
+    },
+    {
+      "id": "english-course-friday-2026",
+      "title": "英语课程 / English Course",
+      "start": "2026-10-02T19:00:00",
+      "end": "2026-10-02T21:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=FR;COUNT=12",
+      "categories": ["英语", "课程"],
+      "description": "每周五晚上英语课程，共 12 次：2026-10-02 至 2026-12-18。"
+    },
+    {
       "id": "eng5292-20260925-1100",
       "title": "ENG 5292 · Power Electronics and Drives M",
       "start": "2026-09-25T11:00:00",
