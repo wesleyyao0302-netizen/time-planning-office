@@ -1,0 +1,155 @@
+{
+  "calendar": {
+    "name": "Skun · 科研、课程与组会",
+    "description": "University of Glasgow 课程、科研任务、Python 学习与每周组会",
+    "timezone": "Europe/London",
+    "product_id": "-//Skun//Research Time Workstation//ZH-CN"
+  },
+  "events": [
+    {
+      "id": "weekly-group-meeting",
+      "title": "组会 / Weekly Group Meeting",
+      "start": "2026-09-30T12:00:00",
+      "end": "2026-09-30T13:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=WE",
+      "categories": ["科研", "组会"],
+      "description": "固定组会。会前准备：本周成果、关键图表、未解决问题与下周计划。"
+    },
+    {
+      "id": "eng5292-20260925-1100",
+      "title": "ENG 5292 · Power Electronics and Drives M",
+      "start": "2026-09-25T11:00:00",
+      "end": "2026-09-25T12:00:00",
+      "location": "JMS Learning Hub, Room 743",
+      "categories": ["课程", "ENG 5292"],
+      "description": "授课教师：Mohammad Yazdani-Asrami。课表中的 JMS:743 按 JMS Learning Hub 743 记录。"
+    },
+    {
+      "id": "eng5292-20260925-1300",
+      "title": "ENG 5292 · Power Electronics and Drives M",
+      "start": "2026-09-25T13:00:00",
+      "end": "2026-09-25T14:00:00",
+      "location": "JMS Learning Hub, Room 743",
+      "categories": ["课程", "ENG 5292"],
+      "description": "授课教师：Mohammad Yazdani-Asrami。课表中的 JMS:743 按 JMS Learning Hub 743 记录。"
+    },
+    {
+      "id": "eng5292-monday-2026",
+      "title": "ENG 5292 · Power Electronics and Drives M",
+      "start": "2026-09-28T13:00:00",
+      "end": "2026-09-28T14:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=MO;COUNT=9",
+      "location": "JMS Learning Hub, Room 743",
+      "categories": ["课程", "ENG 5292"],
+      "description": "每周一上课，共 9 次：2026-09-28 至 2026-11-23。授课教师：Mohammad Yazdani-Asrami。"
+    },
+    {
+      "id": "eng5292-20261126-1400",
+      "title": "ENG 5292 · Power Electronics and Drives M",
+      "start": "2026-11-26T14:00:00",
+      "end": "2026-11-26T16:00:00",
+      "location": "Boyd Orr Building, Room 407 (Lecture Theatre A)",
+      "categories": ["课程", "ENG 5292"],
+      "description": "课表原文：CTT BOYD ORR:407 (LT A)。授课教师：Mohammad Yazdani-Asrami。"
+    },
+    {
+      "id": "research-framework-v01",
+      "title": "深度工作 · 研究框架 v0.1",
+      "start": "2026-09-25T08:45:00",
+      "end": "2026-09-25T10:15:00",
+      "categories": ["科研", "深度工作"],
+      "description": "输出一页框架：负荷形成 → 预测目标/测量边界 → 影响因素 → 数据中心类型与拓扑 → 方法 → gap 与时间线。完成标准：每个分支至少有 2–4 个 bullet。"
+    },
+    {
+      "id": "python-fast-track-1",
+      "title": "Python 快速通道 1 · 基础语法",
+      "start": "2026-09-25T14:30:00",
+      "end": "2026-09-25T16:00:00",
+      "url": "https://www.bilibili.com/video/BV1c4411e77t?p=2",
+      "categories": ["Python", "学习"],
+      "description": "观看并同步敲代码：P2；P4–P6；P9–P12。原速约 80 分 57 秒，建议 1.25 倍速；暂停完成 3 个小练习。跳过序章、小游戏和长篇拓展。"
+    },
+    {
+      "id": "measurement-boundary-table",
+      "title": "深度工作 · 数据与测量边界表",
+      "start": "2026-09-25T16:15:00",
+      "end": "2026-09-25T17:30:00",
+      "categories": ["科研", "数据"],
+      "description": "确定第一版预测对象：PCC/接网节点有功功率、小时分辨率。列出 timestamp、power、lag-24、lag-168、天气/IT 负载/现场新能源等字段，并标注可得性与单位。"
+    },
+    {
+      "id": "research-admin-followup",
+      "title": "轻量任务 · 行政跟进",
+      "start": "2026-09-25T17:30:00",
+      "end": "2026-09-25T18:00:00",
+      "categories": ["行政"],
+      "description": "检查月度 engagement 表、打印权限邮件，以及 MSc (Research) 转 PhD 咨询回复；只记录状态和下一步，不挤占科研深度工作。"
+    },
+    {
+      "id": "python-fast-track-2",
+      "title": "Python 快速通道 2 · 控制流、列表与函数",
+      "start": "2026-09-28T09:00:00",
+      "end": "2026-09-28T11:45:00",
+      "url": "https://www.bilibili.com/video/BV1c4411e77t?p=15",
+      "categories": ["Python", "学习"],
+      "description": "必看：P15–P19（分支与循环）、P20–P23（列表 I–IV）、P42–P45（函数 I–IV）。视频原速约 2 小时 16 分；建议 1.25 倍速并保留约 45 分钟跟敲。"
+    },
+    {
+      "id": "baseline-model-v01",
+      "title": "深度工作 · 基线预测代码 v0.1",
+      "start": "2026-09-28T14:30:00",
+      "end": "2026-09-28T16:30:00",
+      "categories": ["科研", "Python", "建模"],
+      "description": "跑通 hourly load：前一天、前一周、二者均值与线性回归四个 baseline；必须采用 chronological split，不打乱时间顺序。先用合成数据验证代码，再替换真实数据。"
+    },
+    {
+      "id": "baseline-evaluation-v01",
+      "title": "深度工作 · 指标与预测图",
+      "start": "2026-09-28T16:45:00",
+      "end": "2026-09-28T17:45:00",
+      "categories": ["科研", "结果"],
+      "description": "输出 MAE、RMSE、MAPE 表；绘制最后 7 天 Actual vs Forecast。写下 3 条观察，不把合成数据结果当作研究结论。"
+    },
+    {
+      "id": "python-fast-track-3",
+      "title": "Python 快速通道 3 · 文件读写",
+      "start": "2026-09-29T09:00:00",
+      "end": "2026-09-29T10:00:00",
+      "url": "https://www.bilibili.com/video/BV1c4411e77t?p=54",
+      "categories": ["Python", "学习"],
+      "description": "观看 P54–P56（永久存储，上/中/下），原速约 42 分 53 秒；随后用 15–20 分钟练习读取和保存 CSV。P57–P58 异常处理仅在时间充足时选看。"
+    },
+    {
+      "id": "model-verification",
+      "title": "深度工作 · 模型与公式核查",
+      "start": "2026-09-29T10:15:00",
+      "end": "2026-09-29T12:00:00",
+      "categories": ["科研", "核查"],
+      "description": "逐项核对特征、权重、训练/测试时间边界和单位；手算 3 个时点；检查 data leakage；记录公式来源与仍不确定的假设。"
+    },
+    {
+      "id": "topology-classification",
+      "title": "深度工作 · 数据中心接网/拓扑分类",
+      "start": "2026-09-29T13:15:00",
+      "end": "2026-09-29T14:45:00",
+      "categories": ["科研", "框架"],
+      "description": "形成矩阵：功率等级 × 接网结构 × 是否含现场新能源/储能/UPS/微网 × 对 PCC 负荷预测的影响。每一类列出可观测变量与主要 gap。"
+    },
+    {
+      "id": "meeting-pack-finalise",
+      "title": "组会准备 · 整合结果与讲述线",
+      "start": "2026-09-29T15:00:00",
+      "end": "2026-09-29T17:00:00",
+      "categories": ["科研", "组会准备"],
+      "description": "完成 3–4 页：1) 研究领域分类与 gap；2) 数据/测量边界；3) baseline 方法、公式与初始结果；4) 下一步和需要导师确认的问题。"
+    },
+    {
+      "id": "meeting-rehearsal",
+      "title": "组会准备 · 口头排练与问题清单",
+      "start": "2026-09-29T17:15:00",
+      "end": "2026-09-29T17:45:00",
+      "categories": ["科研", "组会准备"],
+      "description": "限时 8 分钟讲一遍；重点准备回答：预测目标为何选 PCC 有功功率、数据从哪里来、模型为何合理、拓扑是否改变输入与边界。"
+    }
+  ]
+}

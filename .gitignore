@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+research/outputs/
+data/hourly_load.csv
+.DS_Store

@@ -1,1 +1,106 @@
-# time-planning-office
+# Research Time Workstation
+
+这是一个可放入 GitHub 的“科研时间规划工作站”。它把课程、Python 学习、本周科研任务和每周组会写在同一份标准 iCalendar 日历中，并通过 GitHub Pages 提供稳定订阅地址。
+
+当前版本已经包含：
+
+- ENG 5292 `Power Electronics and Drives M` 的课表；
+- 每周三 12:00–13:00 组会（从 2026-09-30 开始）；
+- 2026-09-25、09-28、09-29 的科研与 Python 时间块；
+- 一个可直接运行的负荷预测 baseline 脚手架；
+- 自动生成、测试并发布 `calendar.ics` 的 GitHub Actions 工作流。
+
+## 1. 立即使用本地日历
+
+运行：
+
+```bash
+python3 scripts/build_calendar.py
+python3 -m unittest discover -s tests
+```
+
+生成文件：`docs/calendar.ics`。
+
+你可以直接把它导入 Google Calendar、Apple Calendar 或 Outlook。直接导入只会复制当前事件；如果以后要自动同步，请按下一节发布订阅地址。
+
+## 2. 发布为可更新的订阅日历
+
+1. 在 GitHub 新建仓库，例如 `research-time-workstation`。
+2. 将本项目完整上传到仓库的 `main` 分支。
+3. 进入 `Settings → Pages`，将 `Source` 设为 `GitHub Actions`。
+4. 打开 `Actions`，等待 `Build and deploy calendar` 完成。
+5. 访问：`https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/`。
+6. 页面里的“订阅日历”按钮会使用稳定的 `webcal://` 地址。
+
+命令行方式：
+
+```bash
+git init
+git add .
+git commit -m "Create research time workstation"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git push -u origin main
+```
+
+## 3. 以后怎样更新
+
+日程唯一数据源是 `data/schedule.json`。新增或修改事件后提交到 `main`：
+
+```bash
+python3 scripts/build_calendar.py
+python3 -m unittest discover -s tests
+git add data/schedule.json docs/calendar.ics
+git commit -m "Update schedule"
+git push
+```
+
+GitHub Actions 会重新生成并发布日历。已经订阅的设备会按各自刷新周期获取新版；刷新不是实时的，通常由日历应用自行决定。
+
+事件示例：
+
+```json
+{
+  "id": "unique-stable-id",
+  "title": "事件名称",
+  "start": "2026-10-01T09:00:00",
+  "end": "2026-10-01T10:00:00",
+  "location": "可选地点",
+  "categories": ["科研"],
+  "description": "完成标准"
+}
+```
+
+循环事件增加 `rrule`，例如每周三：
+
+```json
+"rrule": "FREQ=WEEKLY;BYDAY=WE"
+```
+
+不要修改既有事件的 `id`，否则订阅端可能把它识别成新事件。
+
+## 4. 本周交付逻辑
+
+详细安排见 [WEEK_PLAN.md](WEEK_PLAN.md)。本轮重点不是学完整套 Python，而是让学习直接服务于 9 月 30 日组会：
+
+1. 研究领域和 gap 分类；
+2. 数据中心接网/拓扑分类；
+3. 数据与测量边界；
+4. 前一天、前一周、均值与线性回归 baseline；
+5. chronological split、MAE/RMSE/MAPE 和预测图；
+6. 公式、数据泄漏和单位的人工核查。
+
+## 5. 负荷预测脚手架
+
+安装并运行：
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 research/baseline_forecast.py
+```
+
+如 `data/hourly_load.csv` 不存在，脚本会创建一份固定随机种子的合成演示数据；这只用于验证代码，不能作为研究结论。真实数据格式和输出说明见 [research/README.md](research/README.md)。
+
+## 隐私提醒
+
+GitHub Pages 地址通常可通过互联网访问。不要把未公开数据、受限论文材料、个人信息或敏感研究内容写入公开日历。需要私密订阅时，应使用支持访问控制的日历服务。
