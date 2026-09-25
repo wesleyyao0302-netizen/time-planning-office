@@ -4,8 +4,8 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 PRODID:-//Skun//Research Time Workstation//ZH-CN
 X-WR-CALNAME:Skun · 科研、课程与组会
-X-WR-CALDESC:University of Glasgow 课程、科研任务、Python 学习与
- 每周组会
+X-WR-CALDESC:University of Glasgow 课程、科研、Python、机器学习
+ 、电力电子与每周组会
 X-WR-TIMEZONE:Europe/London
 BEGIN:VTIMEZONE
 TZID:Europe/London
@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:weekly-group-meeting@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260930T120000
 DTEND;TZID=Europe/London:20260930T130000
 SUMMARY:组会 / Weekly Group Meeting
@@ -40,7 +40,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:english-course-wednesday-2026@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260930T140000
 DTEND;TZID=Europe/London:20260930T160000
 SUMMARY:英语课程 / English Course
@@ -53,7 +53,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:english-course-friday-2026@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20261002T190000
 DTEND;TZID=Europe/London:20261002T210000
 SUMMARY:英语课程 / English Course
@@ -66,7 +66,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:eng5292-20260925-1100@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260925T110000
 DTEND;TZID=Europe/London:20260925T120000
 SUMMARY:ENG 5292 · Power Electronics and Drives M
@@ -79,7 +79,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:eng5292-20260925-1300@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260925T130000
 DTEND;TZID=Europe/London:20260925T140000
 SUMMARY:ENG 5292 · Power Electronics and Drives M
@@ -92,7 +92,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:eng5292-monday-2026@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260928T130000
 DTEND;TZID=Europe/London:20260928T140000
 SUMMARY:ENG 5292 · Power Electronics and Drives M
@@ -106,7 +106,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:eng5292-20261126-1400@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20261126T140000
 DTEND;TZID=Europe/London:20261126T160000
 SUMMARY:ENG 5292 · Power Electronics and Drives M
@@ -119,7 +119,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:research-framework-v01@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260925T084500
 DTEND;TZID=Europe/London:20260925T101500
 SUMMARY:深度工作 · 研究框架 v0.1
@@ -132,7 +132,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:python-fast-track-1@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260925T143000
 DTEND;TZID=Europe/London:20260925T160000
 SUMMARY:Python 快速通道 1 · 基础语法
@@ -146,7 +146,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:measurement-boundary-table@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260925T161500
 DTEND;TZID=Europe/London:20260925T173000
 SUMMARY:深度工作 · 数据与测量边界表
@@ -159,7 +159,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:research-admin-followup@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260925T173000
 DTEND;TZID=Europe/London:20260925T180000
 SUMMARY:轻量任务 · 行政跟进
@@ -172,7 +172,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:python-fast-track-2@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260928T090000
 DTEND;TZID=Europe/London:20260928T114500
 SUMMARY:Python 快速通道 2 · 控制流、列表与函数
@@ -186,7 +186,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:baseline-model-v01@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260928T143000
 DTEND;TZID=Europe/London:20260928T163000
 SUMMARY:深度工作 · 基线预测代码 v0.1
@@ -199,7 +199,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:baseline-evaluation-v01@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260928T164500
 DTEND;TZID=Europe/London:20260928T174500
 SUMMARY:深度工作 · 指标与预测图
@@ -211,7 +211,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:python-fast-track-3@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260929T090000
 DTEND;TZID=Europe/London:20260929T100000
 SUMMARY:Python 快速通道 3 · 文件读写
@@ -225,7 +225,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:model-verification@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260929T101500
 DTEND;TZID=Europe/London:20260929T120000
 SUMMARY:深度工作 · 模型与公式核查
@@ -238,7 +238,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:topology-classification@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260929T131500
 DTEND;TZID=Europe/London:20260929T144500
 SUMMARY:深度工作 · 数据中心接网/拓扑分类
@@ -251,7 +251,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:meeting-pack-finalise@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260929T150000
 DTEND;TZID=Europe/London:20260929T170000
 SUMMARY:组会准备 · 整合结果与讲述线
@@ -264,7 +264,7 @@ TRANSP:OPAQUE
 END:VEVENT
 BEGIN:VEVENT
 UID:meeting-rehearsal@skun-research-time-workstation
-DTSTAMP:20260924T235532Z
+DTSTAMP:20260925T002115Z
 DTSTART;TZID=Europe/London:20260929T171500
 DTEND;TZID=Europe/London:20260929T174500
 SUMMARY:组会准备 · 口头排练与问题清单
@@ -272,6 +272,644 @@ DESCRIPTION:限时 8 分钟讲一遍；重点准备回答：预测目标为
  何选 PCC 有功功率、数据从哪里来、模型为何合理、拓扑
  是否改变输入与边界。
 CATEGORIES:科研,组会准备
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:research-core-monday-2026-27@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261005T090000
+DTEND;TZID=Europe/London:20261005T120000
+SUMMARY:科研核心时间 · 问题与数据
+DESCRIPTION:保护科研主线：明确本周研究问题、数据边界、
+ 假设和最小实验。每周必须留下研究日志与可交付清单
+ ；圣诞两周暂停。
+CATEGORIES:科研,深度工作
+RRULE:FREQ=WEEKLY;BYDAY=MO;COUNT=16
+EXDATE;TZID=Europe/London:20261221T090000,20261228T090000
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:research-core-tuesday-2026-27@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261006T090000
+DTEND;TZID=Europe/London:20261006T120000
+SUMMARY:科研核心时间 · 模型与实验
+DESCRIPTION:实现或运行本周最小实验，保存代码、配置、随
+ 机种子和结果；课程知识只在能够推进当前研究问题时
+ 引入。圣诞两周暂停。
+CATEGORIES:科研,深度工作
+RRULE:FREQ=WEEKLY;BYDAY=TU;COUNT=16
+EXDATE;TZID=Europe/London:20261222T090000,20261229T090000
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:research-synthesis-wednesday-2026-27@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20260930T090000
+DTEND;TZID=Europe/London:20260930T110000
+SUMMARY:科研整合 · 组会材料
+DESCRIPTION:把本周工作压缩为一页：结果图/表、证据、限
+ 制、一个待导师决策的问题和下一步。圣诞两周暂停；
+ 组会本身是否取消以导师通知为准。
+CATEGORIES:科研,组会准备
+RRULE:FREQ=WEEKLY;BYDAY=WE;COUNT=17
+EXDATE;TZID=Europe/London:20261223T090000,20261230T090000
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:research-core-thursday-2026-27@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261001T090000
+DTEND;TZID=Europe/London:20261001T120000
+SUMMARY:科研核心时间 · 分析与验证
+DESCRIPTION:核查时间切分、data leakage、单位、公式和关键假
+ 设；补做对照/敏感性分析。圣诞两周暂停。
+CATEGORIES:科研,深度工作
+RRULE:FREQ=WEEKLY;BYDAY=TH;COUNT=17
+EXDATE;TZID=Europe/London:20261224T090000,20261231T090000
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:research-core-friday-2026-27@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261002T090000
+DTEND;TZID=Europe/London:20261002T120000
+SUMMARY:科研核心时间 · 结果与记录
+DESCRIPTION:整理图表、实验日志、代码状态和仍不确定之处
+ ；为下周留下可直接启动的入口。圣诞两周暂停。
+CATEGORIES:科研,深度工作
+RRULE:FREQ=WEEKLY;BYDAY=FR;COUNT=17
+EXDATE;TZID=Europe/London:20261225T090000,20270101T090000
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-01@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261001T183000
+DTEND;TZID=Europe/London:20261001T210000
+SUMMARY:电力电子本科 01/24 · CH1 基础应用
+DESCRIPTION:观看 CH1：电力电子的基础应用（01:24:55）。输出
+ ：画出数据中心供电链与主要变换环节概念图，并标出
+ 与 PCC 的关系。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-02@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261008T183000
+DTEND;TZID=Europe/London:20261008T210000
+SUMMARY:电力电子本科 02/24 · Buck 稳态分析
+DESCRIPTION:观看 CH2.1：Buck、小纹波近似、伏秒平衡、安秒
+ 平衡（01:41:51）。输出：一页 Buck 手算，列出假设和适用
+ 边界。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-03@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261015T183000
+DTEND;TZID=Europe/London:20261015T210000
+SUMMARY:电力电子本科 03/24 · Boost/Cuk 与纹波
+DESCRIPTION:观看 CH2.2：Boost、Cuk 变换器与纹波计算（01:15:52
+ ）。输出：Buck/Boost/Cuk 工作区间和纹波关系对照表。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-04@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261022T183000
+DTEND;TZID=Europe/London:20261022T210000
+SUMMARY:电力电子本科 04/24 · 变换器直流模型
+DESCRIPTION:观看 CH3：电力电子变换器直流模型（02:00:26）。
+ 输出：平均模型框图、输入输出变量、关键假设与局限
+ 。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-05-06@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261029T183000
+DTEND;TZID=Europe/London:20261029T210000
+SUMMARY:电力电子本科 05–06/24 · 器件象限与二极管
+DESCRIPTION:观看 CH4.1 器件工作象限（00:37:39）和 CH4.2 功率
+ 二极管（01:27:07），建议 1.25×。输出：象限—器件选择
+ 表。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-07-08@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261105T183000
+DTEND;TZID=Europe/London:20261105T210000
+SUMMARY:电力电子本科 07–08/24 · MOSFET、BJT、IGBT、晶闸管
+DESCRIPTION:观看 CH4.3 功率 MOSFET（01:07:34）和 CH4.4 功率 BJT、
+ IGBT、晶闸管（01:15:33），建议 1.25×。输出：损耗与适用
+ 场景表。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-09-10@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261112T183000
+DTEND;TZID=Europe/London:20261112T210000
+SUMMARY:电力电子本科 09–10/24 · 宽禁带器件与 DCM
+DESCRIPTION:观看 CH4.5 宽禁带功率半导体（00:51:48）和 CH5 断
+ 续导通模式 DCM（01:32:49），建议 1.25×。输出：Si/SiC/GaN 
+ 与 CCM/DCM 判断卡。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-11-12@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261119T183000
+DTEND;TZID=Europe/London:20261119T210000
+SUMMARY:电力电子本科 11–12/24 · 磁性元件与拓扑衍生
+DESCRIPTION:观看 CH6 磁性元件基础与电感模型（01:07:02；原
+ 视频注明后两小节未录）和 CH7 拓扑衍生方法（01:16:41）
+ 。输出：磁件假设清单与拓扑衍生树。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-13-14@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261126T183000
+DTEND;TZID=Europe/London:20261126T210000
+SUMMARY:电力电子本科 13–14/24 · 非隔离 DC/DC 与正激
+DESCRIPTION:观看 CH8.1 非隔离 DC/DC（00:52:05）和 CH8.2 正激变
+ 换器（01:01:10）。输出：非隔离/正激的器件应力、隔离
+ 与使用条件比较页。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-15-17@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261203T183000
+DTEND;TZID=Europe/London:20261203T210000
+SUMMARY:电力电子本科 15–17/24 · 隔离 Buck、反激与隔离 Boos
+ t
+DESCRIPTION:观看 CH8.3 隔离 Buck（00:35:16）、CH8.4 反激（00:25:2
+ 5）、CH8.5 隔离 Boost 与其他隔离方法（01:09:51）。输出：
+ 隔离拓扑选择矩阵。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-18-19@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261210T183000
+DTEND;TZID=Europe/London:20261210T210000
+SUMMARY:电力电子本科 18–19/24 · 单相/三相不控整流
+DESCRIPTION:观看 CH9.1 单相不控二极管整流（01:28:33）和 CH9.2
+  三相不可控整流（01:04:43），建议 1.25×。输出：整流波
+ 形和主要谐波观察。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-20-21@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261217T183000
+DTEND;TZID=Europe/London:20261217T210000
+SUMMARY:电力电子本科 20–21/24 · 单相/三相可控整流
+DESCRIPTION:观看 CH10.1 单相可控整流（01:27:31）和 CH10.2 三相
+ 可控整流（00:53:22），建议 1.25×。输出：触发角—平均
+ 输出关系页。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-22@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20270107T183000
+DTEND;TZID=Europe/London:20270107T210000
+SUMMARY:电力电子本科 22/24 · 谐波与功率因素矫正
+DESCRIPTION:观看 CH11：交流系统谐波分析与功率因素矫正（0
+ 1:53:47）。输出：PCC 谐波、功率因数、测量量与研究相关
+ 性表。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-23@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20270114T183000
+DTEND;TZID=Europe/London:20270114T210000
+SUMMARY:电力电子本科 23/24 · 方波逆变器
+DESCRIPTION:观看 CH12：方波逆变器（01:59:06）。输出：调制
+ 、谐波和器件应力笔记，并与蓝库逆变仿真互相核对。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:power-electronics-undergrad-24@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20270121T183000
+DTEND;TZID=Europe/London:20270121T210000
+SUMMARY:电力电子本科 24/24 · PWM 逆变与总复盘
+DESCRIPTION:观看 CH13.2 PWM 逆变（01:31:18；原视频注明第一部
+ 分丢失），用 ENG 5292 与蓝库 08 补缺。输出：拓扑 × 控
+ 制 × PCC 影响总图。
+URL:https://space.bilibili.com/519909115/lists/1351814?type=season
+CATEGORIES:电力电子,本科课程,学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-black-01-02@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261003T100000
+DTEND;TZID=Europe/London:20261003T123000
+SUMMARY:Simulink 黑库 01–02/08 · 单相半波与全波整流
+DESCRIPTION:观看 01 单相半波整流（00:55:45）与 02 单相全波
+ 整流（00:36:36）。交付：两组波形、参数表和一个可复用
+ 子系统。
+URL:https://www.bilibili.com/video/BV1xz411B7cV/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-black-03-04@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261010T100000
+DTEND;TZID=Europe/London:20261010T123000
+SUMMARY:Simulink 黑库 03–04/08 · 三相整流与交交调压
+DESCRIPTION:观看 03 三相桥式整流（00:46:28）与 04 相控/斩控
+ 交交调压（01:00:36）。交付：三相波形、示波器设置与 TH
+ D 计算。
+URL:https://www.bilibili.com/video/BV1xz411B7cV/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-black-05-06@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261017T100000
+DTEND;TZID=Europe/London:20261017T123000
+SUMMARY:Simulink 黑库 05–06/08 · Buck 与单端反激
+DESCRIPTION:观看 05 Buck（00:46:32）与 06 单端反激（00:40:01）
+ 。交付：PWM/闭环 Buck、离散反激模型及理论值对照。
+URL:https://www.bilibili.com/video/BV1xz411B7cV/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-black-07-08@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261024T100000
+DTEND;TZID=Europe/London:20261024T123000
+SUMMARY:Simulink 黑库 07–08/08 · 隔离正激与逆变控制
+DESCRIPTION:观看 07 隔离正激（00:55:07）与 08 无源逆变器控
+ 制（01:27:06），建议 1.25×。交付：C/C++ 嵌入点说明、逆
+ 变控制波形和问题清单。
+URL:https://www.bilibili.com/video/BV1xz411B7cV/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-blue-01-02@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261031T100000
+DTEND;TZID=Europe/London:20261031T123000
+SUMMARY:Simulink 蓝库 01–02/10 · 器件静态与动态特性
+DESCRIPTION:观看 01 器件静态特性（01:01:58）与 02 器件动态
+ 特性（00:46:02）。交付：开关过程、损耗与仿真假设观察
+ 表。
+URL:https://www.bilibili.com/video/BV11z4y1T734/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-blue-03-04@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261107T100000
+DTEND;TZID=Europe/London:20261107T123000
+SUMMARY:Simulink 蓝库 03–04/10 · 非隔离与单端隔离 DC-DC
+DESCRIPTION:观看 03 非隔离 DC-DC（00:59:23）与 04 单端隔离 DC-D
+ C（00:53:13）。交付：两类模型的参数、关键波形及理论
+ 误差。
+URL:https://www.bilibili.com/video/BV11z4y1T734/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-blue-05-06@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261114T100000
+DTEND;TZID=Europe/London:20261114T123000
+SUMMARY:Simulink 蓝库 05–06/10 · 单相与三相独立逆变
+DESCRIPTION:观看 05 单相逆变（00:57:18）与 06 三相独立逆变
+ （01:08:47），建议 1.25×。交付：单/三相拓扑、控制和输
+ 出波形对照。
+URL:https://www.bilibili.com/video/BV11z4y1T734/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-blue-07@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261121T100000
+DTEND;TZID=Europe/London:20261121T123000
+SUMMARY:Simulink 蓝库 07/10 · 三相相控整流
+DESCRIPTION:观看 07 三相相控整流（01:03:47）。交付：至少 3 
+ 个触发角的扫描结果、平均输出与谐波解释。
+URL:https://www.bilibili.com/video/BV11z4y1T734/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-blue-08@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261128T100000
+DTEND;TZID=Europe/London:20261128T123000
+SUMMARY:Simulink 蓝库 08/10 · PWM 并网逆变与整流
+DESCRIPTION:观看 08 PWM 并网逆变与整流（01:18:48）。交付：
+ 并网电流、有/无功、功率因数与谐波图，并连接 PCC 研
+ 究视角。
+URL:https://www.bilibili.com/video/BV11z4y1T734/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-blue-09-10@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261205T100000
+DTEND;TZID=Europe/London:20261205T123000
+SUMMARY:Simulink 蓝库 09–10/10 · 交流调压与变频
+DESCRIPTION:观看 09 交流调压（01:07:23）与 10 交流变频（00:51
+ :25）。交付：AC/AC 控制量、频谱和使用场景对照表。
+URL:https://www.bilibili.com/video/BV11z4y1T734/
+CATEGORIES:MATLAB,Simulink,电力电子,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-integrated-replication@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261212T100000
+DTEND;TZID=Europe/London:20261212T123000
+SUMMARY:Simulink 综合 · 独立复现与参数扫描
+DESCRIPTION:不跟视频：选择一个与数据中心供电相关的变换
+ 器独立重建。至少扫描两个参数，记录求解器/采样时间
+ 、理论值、波形与误差。
+URL:https://www.bilibili.com/video/BV11z4y1T734/
+CATEGORIES:MATLAB,Simulink,科研,实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:simulink-portfolio-review@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261219T100000
+DTEND;TZID=Europe/London:20261219T123000
+SUMMARY:Simulink 综合 · 作品集、复盘与补漏
+DESCRIPTION:整理黑库 8 讲、蓝库 10 讲的模型、README、参数
+ 表和关键波形；补齐失败案例与未解决问题，形成可向
+ 导师展示的一页索引。
+CATEGORIES:MATLAB,Simulink,科研,整理
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-01@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261006T183000
+DTEND;TZID=Europe/London:20261006T203000
+SUMMARY:机器学习 01 · 线性负荷预测 baseline
+DESCRIPTION:李沐《实用机器学习》3.1 机器学习简介 + 3.3 线
+ 性模型。输出：跑通线性回归负荷 baseline，并记录特征
+ 、切分方式和指标。
+URL:https://www.bilibili.com/video/BV1Nv411u7bW/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-02@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261013T183000
+DTEND;TZID=Europe/London:20261013T203000
+SUMMARY:机器学习 02 · EDA 与数据清理
+DESCRIPTION:观看 2.1 探索性数据分析（00:34:51）与 2.2 数据清
+ 理（00:18:53）。输出：缺失、异常、周期性、采样间隔和
+ 数据可用性报告。
+URL:https://www.bilibili.com/video/BV1Xh411p7M9/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-03@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261020T183000
+DTEND;TZID=Europe/London:20261020T203000
+SUMMARY:机器学习 03 · 数据变换与时间序列特征
+DESCRIPTION:观看 2.3 数据变换（00:27:48）与 2.4 特征工程（00:
+ 19:59）。输出：lag-24、lag-168、rolling、小时/星期特征并写
+ 明可用时点。
+URL:https://www.bilibili.com/video/BV13U4y1N7Uo/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-04@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261027T183000
+DTEND;TZID=Europe/London:20261027T203000
+SUMMARY:机器学习 04 · 决策树与 SGD
+DESCRIPTION:观看 3.2 决策树（00:15:57）与 3.4 SGD（00:12:13）。
+ 输出：决策树/SGD 与线性模型的第一版同口径比较。
+URL:https://www.bilibili.com/video/BV1234y1m75j/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-05@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261103T183000
+DTEND;TZID=Europe/London:20261103T203000
+SUMMARY:机器学习 05 · 预测指标与结果图
+DESCRIPTION:观看 4.1 模型评估（00:35:07）。输出：MAE、RMSE、M
+ APE 定义与限制，最后 7 天 Actual vs Forecast 图及 3 条观察
+ 。
+URL:https://www.bilibili.com/video/BV1tQ4y1S7Ty/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-06@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261110T183000
+DTEND;TZID=Europe/London:20261110T203000
+SUMMARY:机器学习 06 · 过拟合与偏差—方差
+DESCRIPTION:观看 4.2 过拟合/欠拟合（00:29:37）与 5.1 偏差/方
+ 差（00:17:00）。输出：学习曲线或训练/验证误差图，解
+ 释当前主要误差来源。
+URL:https://www.bilibili.com/video/BV1H44y1v7Kf/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-07@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261117T183000
+DTEND;TZID=Europe/London:20261117T203000
+SUMMARY:机器学习 07 · 时间顺序验证与泄漏检查
+DESCRIPTION:观看 4.3 模型验证（00:23:07）。输出：chronological 
+ split、rolling validation 方案，以及逐特征的数据泄漏检查
+ 表。
+URL:https://www.bilibili.com/video/BV1Dh411x7hZ/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-08@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261124T183000
+DTEND;TZID=Europe/London:20261124T203000
+SUMMARY:机器学习 08 · Bagging、Boosting 与树集成
+DESCRIPTION:观看 5.2 Bagging（00:16:50）与 5.3 Boosting（00:14:42）
+ 。输出：Random Forest 与 XGBoost baseline，禁止用测试集调参
+ 。
+URL:https://www.bilibili.com/video/BV13U4y1N7Uo/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-09@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261201T183000
+DTEND;TZID=Europe/London:20261201T203000
+SUMMARY:机器学习 09 · 可复用时间序列特征管线
+DESCRIPTION:不追新课，整合 lag、rolling、日历与可得外生变
+ 量为可复用特征函数；用小数据测试时间对齐、缺失值
+ 和未来信息泄漏。
+CATEGORIES:机器学习,负荷预测,科研实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-10@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261208T183000
+DTEND;TZID=Europe/London:20261208T203000
+SUMMARY:机器学习 10 · 统一负荷预测 benchmark
+DESCRIPTION:在同一时间切分、特征和指标下比较前一天、前
+ 一周、均值、线性回归、Random Forest、XGBoost；输出结果表
+ 、耗时和失败案例。
+CATEGORIES:机器学习,负荷预测,科研实作
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-11@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20261215T183000
+DTEND;TZID=Europe/London:20261215T203000
+SUMMARY:机器学习 11 · 时间序列调参与实验记录
+DESCRIPTION:观看 9.1 调参（00:20:29）与 9.2 超参数优化（00:40:
+ 41）。仅在 TimeSeriesSplit 内调参；保存搜索空间、预算、
+ 最优配置和验证结果。
+URL:https://www.bilibili.com/video/BV1FM4y1c7yG/
+CATEGORIES:机器学习,负荷预测,科研学习
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-12@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20270105T183000
+DTEND;TZID=Europe/London:20270105T203000
+SUMMARY:机器学习 12 · RNN 与序列窗口
+DESCRIPTION:观看《实用机器学习》3.7 RNN（00:20:57），构造历
+ 史窗口和预测步长；先用小样本检查张量维度、时间顺
+ 序和泄漏。
+URL:https://www.bilibili.com/video/BV1pq4y1r7zo/
+CATEGORIES:机器学习,深度学习,负荷预测
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-13@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20270112T183000
+DTEND;TZID=Europe/London:20270112T203000
+SUMMARY:机器学习 13 · RNN 实现与 LSTM
+DESCRIPTION:选看李沐 D2L v2：54 RNN、55 RNN 实现、57 LSTM。输出
+ ：最小 LSTM、训练曲线、随机种子、窗口/层数/hidden size 
+ 和复现说明。
+URL:https://www.bilibili.com/video/BV1JU4y1H7PC/
+CATEGORIES:机器学习,深度学习,负荷预测
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:ml-load-forecasting-14@skun-research-time-workstation
+DTSTAMP:20260925T002115Z
+DTSTART;TZID=Europe/London:20270119T183000
+DTEND;TZID=Europe/London:20270119T203000
+SUMMARY:机器学习 14 · 基线/LSTM 比较与不确定性初稿
+DESCRIPTION:在同一测试期比较经典基线与 LSTM，不以复杂度
+ 代替证据；输出总体/分时误差、残差分布、P50/P90 或经
+ 验区间初稿及可向导师确认的问题。
+CATEGORIES:机器学习,负荷预测,科研输出
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 END:VEVENT

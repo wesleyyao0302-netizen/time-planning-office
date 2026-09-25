@@ -1,7 +1,7 @@
 {
   "calendar": {
     "name": "Skun · 科研、课程与组会",
-    "description": "University of Glasgow 课程、科研任务、Python 学习与每周组会",
+    "description": "University of Glasgow 课程、科研、Python、机器学习、电力电子与每周组会",
     "timezone": "Europe/London",
     "product_id": "-//Skun//Research Time Workstation//ZH-CN"
   },
@@ -168,6 +168,421 @@
       "end": "2026-09-29T17:45:00",
       "categories": ["科研", "组会准备"],
       "description": "限时 8 分钟讲一遍；重点准备回答：预测目标为何选 PCC 有功功率、数据从哪里来、模型为何合理、拓扑是否改变输入与边界。"
+    },
+    {
+      "id": "research-core-monday-2026-27",
+      "title": "科研核心时间 · 问题与数据",
+      "start": "2026-10-05T09:00:00",
+      "end": "2026-10-05T12:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=MO;COUNT=16",
+      "exdate": ["2026-12-21T09:00:00", "2026-12-28T09:00:00"],
+      "categories": ["科研", "深度工作"],
+      "description": "保护科研主线：明确本周研究问题、数据边界、假设和最小实验。每周必须留下研究日志与可交付清单；圣诞两周暂停。"
+    },
+    {
+      "id": "research-core-tuesday-2026-27",
+      "title": "科研核心时间 · 模型与实验",
+      "start": "2026-10-06T09:00:00",
+      "end": "2026-10-06T12:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=TU;COUNT=16",
+      "exdate": ["2026-12-22T09:00:00", "2026-12-29T09:00:00"],
+      "categories": ["科研", "深度工作"],
+      "description": "实现或运行本周最小实验，保存代码、配置、随机种子和结果；课程知识只在能够推进当前研究问题时引入。圣诞两周暂停。"
+    },
+    {
+      "id": "research-synthesis-wednesday-2026-27",
+      "title": "科研整合 · 组会材料",
+      "start": "2026-09-30T09:00:00",
+      "end": "2026-09-30T11:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=WE;COUNT=17",
+      "exdate": ["2026-12-23T09:00:00", "2026-12-30T09:00:00"],
+      "categories": ["科研", "组会准备"],
+      "description": "把本周工作压缩为一页：结果图/表、证据、限制、一个待导师决策的问题和下一步。圣诞两周暂停；组会本身是否取消以导师通知为准。"
+    },
+    {
+      "id": "research-core-thursday-2026-27",
+      "title": "科研核心时间 · 分析与验证",
+      "start": "2026-10-01T09:00:00",
+      "end": "2026-10-01T12:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=TH;COUNT=17",
+      "exdate": ["2026-12-24T09:00:00", "2026-12-31T09:00:00"],
+      "categories": ["科研", "深度工作"],
+      "description": "核查时间切分、data leakage、单位、公式和关键假设；补做对照/敏感性分析。圣诞两周暂停。"
+    },
+    {
+      "id": "research-core-friday-2026-27",
+      "title": "科研核心时间 · 结果与记录",
+      "start": "2026-10-02T09:00:00",
+      "end": "2026-10-02T12:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=FR;COUNT=17",
+      "exdate": ["2026-12-25T09:00:00", "2027-01-01T09:00:00"],
+      "categories": ["科研", "深度工作"],
+      "description": "整理图表、实验日志、代码状态和仍不确定之处；为下周留下可直接启动的入口。圣诞两周暂停。"
+    },
+    {
+      "id": "power-electronics-undergrad-01",
+      "title": "电力电子本科 01/24 · CH1 基础应用",
+      "start": "2026-10-01T18:30:00",
+      "end": "2026-10-01T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH1：电力电子的基础应用（01:24:55）。输出：画出数据中心供电链与主要变换环节概念图，并标出与 PCC 的关系。"
+    },
+    {
+      "id": "power-electronics-undergrad-02",
+      "title": "电力电子本科 02/24 · Buck 稳态分析",
+      "start": "2026-10-08T18:30:00",
+      "end": "2026-10-08T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH2.1：Buck、小纹波近似、伏秒平衡、安秒平衡（01:41:51）。输出：一页 Buck 手算，列出假设和适用边界。"
+    },
+    {
+      "id": "power-electronics-undergrad-03",
+      "title": "电力电子本科 03/24 · Boost/Cuk 与纹波",
+      "start": "2026-10-15T18:30:00",
+      "end": "2026-10-15T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH2.2：Boost、Cuk 变换器与纹波计算（01:15:52）。输出：Buck/Boost/Cuk 工作区间和纹波关系对照表。"
+    },
+    {
+      "id": "power-electronics-undergrad-04",
+      "title": "电力电子本科 04/24 · 变换器直流模型",
+      "start": "2026-10-22T18:30:00",
+      "end": "2026-10-22T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH3：电力电子变换器直流模型（02:00:26）。输出：平均模型框图、输入输出变量、关键假设与局限。"
+    },
+    {
+      "id": "power-electronics-undergrad-05-06",
+      "title": "电力电子本科 05–06/24 · 器件象限与二极管",
+      "start": "2026-10-29T18:30:00",
+      "end": "2026-10-29T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH4.1 器件工作象限（00:37:39）和 CH4.2 功率二极管（01:27:07），建议 1.25×。输出：象限—器件选择表。"
+    },
+    {
+      "id": "power-electronics-undergrad-07-08",
+      "title": "电力电子本科 07–08/24 · MOSFET、BJT、IGBT、晶闸管",
+      "start": "2026-11-05T18:30:00",
+      "end": "2026-11-05T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH4.3 功率 MOSFET（01:07:34）和 CH4.4 功率 BJT、IGBT、晶闸管（01:15:33），建议 1.25×。输出：损耗与适用场景表。"
+    },
+    {
+      "id": "power-electronics-undergrad-09-10",
+      "title": "电力电子本科 09–10/24 · 宽禁带器件与 DCM",
+      "start": "2026-11-12T18:30:00",
+      "end": "2026-11-12T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH4.5 宽禁带功率半导体（00:51:48）和 CH5 断续导通模式 DCM（01:32:49），建议 1.25×。输出：Si/SiC/GaN 与 CCM/DCM 判断卡。"
+    },
+    {
+      "id": "power-electronics-undergrad-11-12",
+      "title": "电力电子本科 11–12/24 · 磁性元件与拓扑衍生",
+      "start": "2026-11-19T18:30:00",
+      "end": "2026-11-19T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH6 磁性元件基础与电感模型（01:07:02；原视频注明后两小节未录）和 CH7 拓扑衍生方法（01:16:41）。输出：磁件假设清单与拓扑衍生树。"
+    },
+    {
+      "id": "power-electronics-undergrad-13-14",
+      "title": "电力电子本科 13–14/24 · 非隔离 DC/DC 与正激",
+      "start": "2026-11-26T18:30:00",
+      "end": "2026-11-26T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH8.1 非隔离 DC/DC（00:52:05）和 CH8.2 正激变换器（01:01:10）。输出：非隔离/正激的器件应力、隔离与使用条件比较页。"
+    },
+    {
+      "id": "power-electronics-undergrad-15-17",
+      "title": "电力电子本科 15–17/24 · 隔离 Buck、反激与隔离 Boost",
+      "start": "2026-12-03T18:30:00",
+      "end": "2026-12-03T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH8.3 隔离 Buck（00:35:16）、CH8.4 反激（00:25:25）、CH8.5 隔离 Boost 与其他隔离方法（01:09:51）。输出：隔离拓扑选择矩阵。"
+    },
+    {
+      "id": "power-electronics-undergrad-18-19",
+      "title": "电力电子本科 18–19/24 · 单相/三相不控整流",
+      "start": "2026-12-10T18:30:00",
+      "end": "2026-12-10T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH9.1 单相不控二极管整流（01:28:33）和 CH9.2 三相不可控整流（01:04:43），建议 1.25×。输出：整流波形和主要谐波观察。"
+    },
+    {
+      "id": "power-electronics-undergrad-20-21",
+      "title": "电力电子本科 20–21/24 · 单相/三相可控整流",
+      "start": "2026-12-17T18:30:00",
+      "end": "2026-12-17T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH10.1 单相可控整流（01:27:31）和 CH10.2 三相可控整流（00:53:22），建议 1.25×。输出：触发角—平均输出关系页。"
+    },
+    {
+      "id": "power-electronics-undergrad-22",
+      "title": "电力电子本科 22/24 · 谐波与功率因素矫正",
+      "start": "2027-01-07T18:30:00",
+      "end": "2027-01-07T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH11：交流系统谐波分析与功率因素矫正（01:53:47）。输出：PCC 谐波、功率因数、测量量与研究相关性表。"
+    },
+    {
+      "id": "power-electronics-undergrad-23",
+      "title": "电力电子本科 23/24 · 方波逆变器",
+      "start": "2027-01-14T18:30:00",
+      "end": "2027-01-14T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH12：方波逆变器（01:59:06）。输出：调制、谐波和器件应力笔记，并与蓝库逆变仿真互相核对。"
+    },
+    {
+      "id": "power-electronics-undergrad-24",
+      "title": "电力电子本科 24/24 · PWM 逆变与总复盘",
+      "start": "2027-01-21T18:30:00",
+      "end": "2027-01-21T21:00:00",
+      "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
+      "categories": ["电力电子", "本科课程", "学习"],
+      "description": "观看 CH13.2 PWM 逆变（01:31:18；原视频注明第一部分丢失），用 ENG 5292 与蓝库 08 补缺。输出：拓扑 × 控制 × PCC 影响总图。"
+    },
+    {
+      "id": "simulink-black-01-02",
+      "title": "Simulink 黑库 01–02/08 · 单相半波与全波整流",
+      "start": "2026-10-03T10:00:00",
+      "end": "2026-10-03T12:30:00",
+      "url": "https://www.bilibili.com/video/BV1xz411B7cV/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 01 单相半波整流（00:55:45）与 02 单相全波整流（00:36:36）。交付：两组波形、参数表和一个可复用子系统。"
+    },
+    {
+      "id": "simulink-black-03-04",
+      "title": "Simulink 黑库 03–04/08 · 三相整流与交交调压",
+      "start": "2026-10-10T10:00:00",
+      "end": "2026-10-10T12:30:00",
+      "url": "https://www.bilibili.com/video/BV1xz411B7cV/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 03 三相桥式整流（00:46:28）与 04 相控/斩控交交调压（01:00:36）。交付：三相波形、示波器设置与 THD 计算。"
+    },
+    {
+      "id": "simulink-black-05-06",
+      "title": "Simulink 黑库 05–06/08 · Buck 与单端反激",
+      "start": "2026-10-17T10:00:00",
+      "end": "2026-10-17T12:30:00",
+      "url": "https://www.bilibili.com/video/BV1xz411B7cV/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 05 Buck（00:46:32）与 06 单端反激（00:40:01）。交付：PWM/闭环 Buck、离散反激模型及理论值对照。"
+    },
+    {
+      "id": "simulink-black-07-08",
+      "title": "Simulink 黑库 07–08/08 · 隔离正激与逆变控制",
+      "start": "2026-10-24T10:00:00",
+      "end": "2026-10-24T12:30:00",
+      "url": "https://www.bilibili.com/video/BV1xz411B7cV/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 07 隔离正激（00:55:07）与 08 无源逆变器控制（01:27:06），建议 1.25×。交付：C/C++ 嵌入点说明、逆变控制波形和问题清单。"
+    },
+    {
+      "id": "simulink-blue-01-02",
+      "title": "Simulink 蓝库 01–02/10 · 器件静态与动态特性",
+      "start": "2026-10-31T10:00:00",
+      "end": "2026-10-31T12:30:00",
+      "url": "https://www.bilibili.com/video/BV11z4y1T734/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 01 器件静态特性（01:01:58）与 02 器件动态特性（00:46:02）。交付：开关过程、损耗与仿真假设观察表。"
+    },
+    {
+      "id": "simulink-blue-03-04",
+      "title": "Simulink 蓝库 03–04/10 · 非隔离与单端隔离 DC-DC",
+      "start": "2026-11-07T10:00:00",
+      "end": "2026-11-07T12:30:00",
+      "url": "https://www.bilibili.com/video/BV11z4y1T734/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 03 非隔离 DC-DC（00:59:23）与 04 单端隔离 DC-DC（00:53:13）。交付：两类模型的参数、关键波形及理论误差。"
+    },
+    {
+      "id": "simulink-blue-05-06",
+      "title": "Simulink 蓝库 05–06/10 · 单相与三相独立逆变",
+      "start": "2026-11-14T10:00:00",
+      "end": "2026-11-14T12:30:00",
+      "url": "https://www.bilibili.com/video/BV11z4y1T734/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 05 单相逆变（00:57:18）与 06 三相独立逆变（01:08:47），建议 1.25×。交付：单/三相拓扑、控制和输出波形对照。"
+    },
+    {
+      "id": "simulink-blue-07",
+      "title": "Simulink 蓝库 07/10 · 三相相控整流",
+      "start": "2026-11-21T10:00:00",
+      "end": "2026-11-21T12:30:00",
+      "url": "https://www.bilibili.com/video/BV11z4y1T734/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 07 三相相控整流（01:03:47）。交付：至少 3 个触发角的扫描结果、平均输出与谐波解释。"
+    },
+    {
+      "id": "simulink-blue-08",
+      "title": "Simulink 蓝库 08/10 · PWM 并网逆变与整流",
+      "start": "2026-11-28T10:00:00",
+      "end": "2026-11-28T12:30:00",
+      "url": "https://www.bilibili.com/video/BV11z4y1T734/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 08 PWM 并网逆变与整流（01:18:48）。交付：并网电流、有/无功、功率因数与谐波图，并连接 PCC 研究视角。"
+    },
+    {
+      "id": "simulink-blue-09-10",
+      "title": "Simulink 蓝库 09–10/10 · 交流调压与变频",
+      "start": "2026-12-05T10:00:00",
+      "end": "2026-12-05T12:30:00",
+      "url": "https://www.bilibili.com/video/BV11z4y1T734/",
+      "categories": ["MATLAB", "Simulink", "电力电子", "实作"],
+      "description": "观看 09 交流调压（01:07:23）与 10 交流变频（00:51:25）。交付：AC/AC 控制量、频谱和使用场景对照表。"
+    },
+    {
+      "id": "simulink-integrated-replication",
+      "title": "Simulink 综合 · 独立复现与参数扫描",
+      "start": "2026-12-12T10:00:00",
+      "end": "2026-12-12T12:30:00",
+      "url": "https://www.bilibili.com/video/BV11z4y1T734/",
+      "categories": ["MATLAB", "Simulink", "科研", "实作"],
+      "description": "不跟视频：选择一个与数据中心供电相关的变换器独立重建。至少扫描两个参数，记录求解器/采样时间、理论值、波形与误差。"
+    },
+    {
+      "id": "simulink-portfolio-review",
+      "title": "Simulink 综合 · 作品集、复盘与补漏",
+      "start": "2026-12-19T10:00:00",
+      "end": "2026-12-19T12:30:00",
+      "categories": ["MATLAB", "Simulink", "科研", "整理"],
+      "description": "整理黑库 8 讲、蓝库 10 讲的模型、README、参数表和关键波形；补齐失败案例与未解决问题，形成可向导师展示的一页索引。"
+    },
+    {
+      "id": "ml-load-forecasting-01",
+      "title": "机器学习 01 · 线性负荷预测 baseline",
+      "start": "2026-10-06T18:30:00",
+      "end": "2026-10-06T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1Nv411u7bW/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "李沐《实用机器学习》3.1 机器学习简介 + 3.3 线性模型。输出：跑通线性回归负荷 baseline，并记录特征、切分方式和指标。"
+    },
+    {
+      "id": "ml-load-forecasting-02",
+      "title": "机器学习 02 · EDA 与数据清理",
+      "start": "2026-10-13T18:30:00",
+      "end": "2026-10-13T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1Xh411p7M9/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "观看 2.1 探索性数据分析（00:34:51）与 2.2 数据清理（00:18:53）。输出：缺失、异常、周期性、采样间隔和数据可用性报告。"
+    },
+    {
+      "id": "ml-load-forecasting-03",
+      "title": "机器学习 03 · 数据变换与时间序列特征",
+      "start": "2026-10-20T18:30:00",
+      "end": "2026-10-20T20:30:00",
+      "url": "https://www.bilibili.com/video/BV13U4y1N7Uo/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "观看 2.3 数据变换（00:27:48）与 2.4 特征工程（00:19:59）。输出：lag-24、lag-168、rolling、小时/星期特征并写明可用时点。"
+    },
+    {
+      "id": "ml-load-forecasting-04",
+      "title": "机器学习 04 · 决策树与 SGD",
+      "start": "2026-10-27T18:30:00",
+      "end": "2026-10-27T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1234y1m75j/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "观看 3.2 决策树（00:15:57）与 3.4 SGD（00:12:13）。输出：决策树/SGD 与线性模型的第一版同口径比较。"
+    },
+    {
+      "id": "ml-load-forecasting-05",
+      "title": "机器学习 05 · 预测指标与结果图",
+      "start": "2026-11-03T18:30:00",
+      "end": "2026-11-03T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1tQ4y1S7Ty/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "观看 4.1 模型评估（00:35:07）。输出：MAE、RMSE、MAPE 定义与限制，最后 7 天 Actual vs Forecast 图及 3 条观察。"
+    },
+    {
+      "id": "ml-load-forecasting-06",
+      "title": "机器学习 06 · 过拟合与偏差—方差",
+      "start": "2026-11-10T18:30:00",
+      "end": "2026-11-10T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1H44y1v7Kf/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "观看 4.2 过拟合/欠拟合（00:29:37）与 5.1 偏差/方差（00:17:00）。输出：学习曲线或训练/验证误差图，解释当前主要误差来源。"
+    },
+    {
+      "id": "ml-load-forecasting-07",
+      "title": "机器学习 07 · 时间顺序验证与泄漏检查",
+      "start": "2026-11-17T18:30:00",
+      "end": "2026-11-17T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1Dh411x7hZ/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "观看 4.3 模型验证（00:23:07）。输出：chronological split、rolling validation 方案，以及逐特征的数据泄漏检查表。"
+    },
+    {
+      "id": "ml-load-forecasting-08",
+      "title": "机器学习 08 · Bagging、Boosting 与树集成",
+      "start": "2026-11-24T18:30:00",
+      "end": "2026-11-24T20:30:00",
+      "url": "https://www.bilibili.com/video/BV13U4y1N7Uo/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "观看 5.2 Bagging（00:16:50）与 5.3 Boosting（00:14:42）。输出：Random Forest 与 XGBoost baseline，禁止用测试集调参。"
+    },
+    {
+      "id": "ml-load-forecasting-09",
+      "title": "机器学习 09 · 可复用时间序列特征管线",
+      "start": "2026-12-01T18:30:00",
+      "end": "2026-12-01T20:30:00",
+      "categories": ["机器学习", "负荷预测", "科研实作"],
+      "description": "不追新课，整合 lag、rolling、日历与可得外生变量为可复用特征函数；用小数据测试时间对齐、缺失值和未来信息泄漏。"
+    },
+    {
+      "id": "ml-load-forecasting-10",
+      "title": "机器学习 10 · 统一负荷预测 benchmark",
+      "start": "2026-12-08T18:30:00",
+      "end": "2026-12-08T20:30:00",
+      "categories": ["机器学习", "负荷预测", "科研实作"],
+      "description": "在同一时间切分、特征和指标下比较前一天、前一周、均值、线性回归、Random Forest、XGBoost；输出结果表、耗时和失败案例。"
+    },
+    {
+      "id": "ml-load-forecasting-11",
+      "title": "机器学习 11 · 时间序列调参与实验记录",
+      "start": "2026-12-15T18:30:00",
+      "end": "2026-12-15T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1FM4y1c7yG/",
+      "categories": ["机器学习", "负荷预测", "科研学习"],
+      "description": "观看 9.1 调参（00:20:29）与 9.2 超参数优化（00:40:41）。仅在 TimeSeriesSplit 内调参；保存搜索空间、预算、最优配置和验证结果。"
+    },
+    {
+      "id": "ml-load-forecasting-12",
+      "title": "机器学习 12 · RNN 与序列窗口",
+      "start": "2027-01-05T18:30:00",
+      "end": "2027-01-05T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1pq4y1r7zo/",
+      "categories": ["机器学习", "深度学习", "负荷预测"],
+      "description": "观看《实用机器学习》3.7 RNN（00:20:57），构造历史窗口和预测步长；先用小样本检查张量维度、时间顺序和泄漏。"
+    },
+    {
+      "id": "ml-load-forecasting-13",
+      "title": "机器学习 13 · RNN 实现与 LSTM",
+      "start": "2027-01-12T18:30:00",
+      "end": "2027-01-12T20:30:00",
+      "url": "https://www.bilibili.com/video/BV1JU4y1H7PC/",
+      "categories": ["机器学习", "深度学习", "负荷预测"],
+      "description": "选看李沐 D2L v2：54 RNN、55 RNN 实现、57 LSTM。输出：最小 LSTM、训练曲线、随机种子、窗口/层数/hidden size 和复现说明。"
+    },
+    {
+      "id": "ml-load-forecasting-14",
+      "title": "机器学习 14 · 基线/LSTM 比较与不确定性初稿",
+      "start": "2027-01-19T18:30:00",
+      "end": "2027-01-19T20:30:00",
+      "categories": ["机器学习", "负荷预测", "科研输出"],
+      "description": "在同一测试期比较经典基线与 LSTM，不以复杂度代替证据；输出总体/分时误差、残差分布、P50/P90 或经验区间初稿及可向导师确认的问题。"
     }
   ]
 }

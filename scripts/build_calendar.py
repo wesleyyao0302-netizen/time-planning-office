@@ -71,6 +71,8 @@ def validate_schedule(payload: dict) -> None:
         end = datetime.fromisoformat(event["end"])
         if end <= start:
             raise ValueError(f"Event end must be after start: {event['id']}")
+        for excluded in event.get("exdate", []):
+            datetime.fromisoformat(excluded)
 
 
 def build(payload: dict) -> str:
@@ -131,6 +133,9 @@ def build(payload: dict) -> str:
             add(lines, "CATEGORIES", ",".join(escape_text(x) for x in event["categories"]))
         if event.get("rrule"):
             add(lines, "RRULE", event["rrule"])
+        if event.get("exdate"):
+            excluded = ",".join(compact_local(value) for value in event["exdate"])
+            add(lines, f"EXDATE;TZID={tzid}", excluded)
         lines.extend(["STATUS:CONFIRMED", "TRANSP:OPAQUE", "END:VEVENT"])
 
     lines.append("END:VCALENDAR")

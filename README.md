@@ -1,6 +1,10 @@
 # Research Time Workstation
 
-这是一个可放入 GitHub 的“科研时间规划工作站”。它把课程、Python 学习、本周科研任务和每周组会写在同一份标准 iCalendar 日历中，并通过 GitHub Pages 提供稳定订阅地址。
+这是一个已发布到 GitHub Pages 的“科研时间规划工作站”。它把 University of Glasgow 课程、科研保护时间、Python、机器学习、电力电子理论/仿真和每周组会写在同一份标准 iCalendar 日历中，并提供稳定订阅地址。
+
+- 在线工作站：<https://wesleyyao0302-netizen.github.io/time-planning-office/>
+- HTTPS 日历：<https://wesleyyao0302-netizen.github.io/time-planning-office/calendar.ics>
+- 详细路线：[COURSE_ROADMAP.md](COURSE_ROADMAP.md)
 
 当前版本已经包含：
 
@@ -8,6 +12,10 @@
 - 每周三 12:00–13:00 组会（从 2026-09-30 开始）；
 - 每周三 14:00–16:00、周五 19:00–21:00 英语课程（至 2026-12-18）；
 - 2026-09-25、09-28、09-29 的科研与 Python 时间块；
+- 每周 14 小时科研保护块（圣诞两周暂停），周日留空；
+- 傅旻帆《电力电子（本科）》24 讲，分 15 个周四完成；
+- MATLAB/Simulink 黑库 8 讲、蓝库 10 讲及 2 次综合实作；
+- 李沐《实用机器学习》负荷预测选段，以及 RNN/LSTM 对照阶段；
 - 一个可直接运行的负荷预测 baseline 脚手架；
 - 自动生成、测试并发布 `calendar.ics` 的 GitHub Actions 工作流。
 
@@ -24,7 +32,17 @@ python3 -m unittest discover -s tests
 
 你可以直接把它导入 Google Calendar、Apple Calendar 或 Outlook。直接导入只会复制当前事件；如果以后要自动同步，请按下一节发布订阅地址。
 
-## 2. 发布为可更新的订阅日历
+## 2. 订阅可更新日历
+
+在工作站页面点击“订阅日历”，或把以下地址粘贴到支持 URL 订阅的日历应用：
+
+```text
+https://wesleyyao0302-netizen.github.io/time-planning-office/calendar.ics
+```
+
+直接下载并导入 `.ics` 只会复制当时的事件；使用 URL 订阅，后续发布的修改才会由日历应用定期获取。刷新频率由 Google Calendar、Apple Calendar 或 Outlook 决定。
+
+### 在其他仓库重新部署
 
 1. 在 GitHub 新建仓库，例如 `research-time-workstation`。
 2. 将本项目完整上传到仓库的 `main` 分支。
@@ -80,7 +98,11 @@ GitHub Actions 会重新生成并发布日历。已经订阅的设备会按各�
 
 不要修改既有事件的 `id`，否则订阅端可能把它识别成新事件。
 
-## 4. 本周交付逻辑
+## 4. 课程—科研长期路线
+
+详细安排见 [COURSE_ROADMAP.md](COURSE_ROADMAP.md)。固定节奏为：周二晚机器学习与负荷预测代码、周四晚电力电子理论、周六上午 Simulink；周一至周五上午优先保护科研，周日留空。课程学习必须产生代码、图表、模型或对照表，不能只以“看完视频”计进度。
+
+## 5. 本周交付逻辑
 
 详细安排见 [WEEK_PLAN.md](WEEK_PLAN.md)。本轮重点不是学完整套 Python，而是让学习直接服务于 9 月 30 日组会：
 
@@ -91,7 +113,7 @@ GitHub Actions 会重新生成并发布日历。已经订阅的设备会按各�
 5. chronological split、MAE/RMSE/MAPE 和预测图；
 6. 公式、数据泄漏和单位的人工核查。
 
-## 5. 负荷预测脚手架
+## 6. 负荷预测脚手架
 
 安装并运行：
 
