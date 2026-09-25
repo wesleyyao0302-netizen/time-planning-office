@@ -91,12 +91,31 @@ class CalendarTests(unittest.TestCase):
             if event["id"].startswith("load-forecast-freeze-")
         ]
         self.assertEqual(16, len(graduate))
-        self.assertEqual("2027-01-28T18:30:00", min(event["start"] for event in graduate))
-        self.assertEqual("2027-05-13T18:30:00", max(event["start"] for event in graduate))
+        self.assertEqual("2026-11-23T18:30:00", min(event["start"] for event in graduate))
+        self.assertEqual("2026-12-19T10:00:00", max(event["start"] for event in graduate))
         self.assertTrue(all("输出" in event["description"] for event in graduate))
         self.assertEqual(5, len(freezes))
         self.assertTrue((ROOT / "LOAD_FORECAST_SPRINT.md").is_file())
         self.assertTrue((ROOT / "ANNUAL_REVIEW_EVIDENCE.md").is_file())
+
+    def test_all_self_study_courses_finish_before_winter_break(self) -> None:
+        prefixes = (
+            "python-",
+            "power-electronics-undergrad-",
+            "simulink-",
+            "ml-load-forecasting-",
+            "power-electronics-graduate-",
+        )
+        self_study = [
+            event
+            for event in self.payload["events"]
+            if event["id"].startswith(prefixes)
+        ]
+        self.assertEqual(11, sum(event["id"].startswith("python-") for event in self_study))
+        self.assertLessEqual(
+            max(datetime.fromisoformat(event["end"]) for event in self_study),
+            datetime(2026, 12, 19, 12, 30),
+        )
 
     def test_research_blocks_pause_for_winter_break(self) -> None:
         self.assertIn("research-core-monday-2026-27@skun-research-time-workstation", self.calendar)

@@ -34,41 +34,51 @@ YYYY-MM-DD_topic_artifact-v01.ext
 
 状态只使用：`Planned`、`In progress`、`Evidence ready`、`Reviewed`。只有成果路径可打开时才能使用 `Evidence ready`。
 
-## 3. 电力电子（研）成果登记
+## 3. Python 完整课程成果关口
+
+| 截止日期 | 必须归档的成果 | 状态 |
+|---|---|---|
+| 2026-09-29 | `python/2026-09-29_load-csv-baseline-fast-track-v01.py` + 运行记录 | Planned |
+| 2026-10-28 | `python/2026-10-28_forecast-experiment-classes-v01.py` + 测试 | Planned |
+| 2026-11-18 | `python/2026-11-18_load-forecast-package-v01/`（模块、测试、README） | Planned |
+
+速通只证明可以开始研究代码；11 月 18 日的包结构、测试和复现说明才构成完整课程的收口证据。
+
+## 4. 电力电子（研）成果登记
 
 以下均为计划，不代表已经完成。
 
 | 日期 | 阶段 | 必须归档的成果 | 状态 |
 |---|---|---|---|
-| 2027-01-28 | 课程框架 | `power-electronics/2027-01-28_course-research-map-v01.pdf` | Planned |
-| 2027-02-04 | 本科诊断 | `power-electronics/2027-02-04_prerequisite-gap-table-v01.xlsx` | Planned |
-| 2027-02-11 | 谐振基本模态 | `power-electronics/2027-02-11_resonant-modes-zvs-map-v01.pdf` | Planned |
-| 2027-02-18 | SRC 设计 | `power-electronics/2027-02-18_src-gain-design-sheet-v01.xlsx` | Planned |
-| 2027-02-25 | 拓扑选择 | `power-electronics/2027-02-25_src-prc-lcc-llc-matrix-v01.pdf` | Planned |
-| 2027-03-04 | LLC 模态 | `power-electronics/2027-03-04_llc-mode-boundaries-v01.pdf` | Planned |
-| 2027-03-11 | LLC 设计 | `power-electronics/2027-03-11_llc-design-worksheet-v01.xlsx` | Planned |
-| 2027-03-18 | 整流/保护/控制 | `power-electronics/2027-03-18_efficiency-protection-control-v01.pdf` | Planned |
-| 2027-03-25 | 多元件谐振 | `power-electronics/2027-03-25_multielement-vs-llc-v01.pdf` | Planned |
-| 2027-04-01 | ZCS | `power-electronics/2027-04-01_zcs-stress-comparison-v01.pdf` | Planned |
-| 2027-04-08 | ZVS/多谐振 | `power-electronics/2027-04-08_zcs-zvs-multiresonant-v01.pdf` | Planned |
-| 2027-04-15 | PWM 软开关 | `power-electronics/2027-04-15_soft-switching-selection-v01.pdf` | Planned |
-| 2027-04-22 | WPT 模型 | `power-electronics/2027-04-22_wpt-equivalent-model-v01.pdf` | Planned |
-| 2027-04-29 | 耦合/补偿 | `power-electronics/2027-04-29_coupler-compensation-matrix-v01.pdf` | Planned |
-| 2027-05-06 | 高频变换 | `power-electronics/2027-05-06_high-frequency-loss-chain-v01.pdf` | Planned |
-| 2027-05-13 | 综合成果 | `power-electronics/2027-05-13_datacentre-psu-research-map-v01.pdf` + 最小模型 | Planned |
+| 2026-11-23 | 课程框架 | `power-electronics/2026-11-23_course-research-map-v01.pdf` | Planned |
+| 2026-11-24 | 本科诊断 | `power-electronics/2026-11-24_prerequisite-gap-table-v01.xlsx` | Planned |
+| 2026-11-26 | 谐振基本模态 | `power-electronics/2026-11-26_resonant-modes-zvs-map-v01.pdf` | Planned |
+| 2026-11-28 | SRC 设计 | `power-electronics/2026-11-28_src-gain-design-sheet-v01.xlsx` | Planned |
+| 2026-11-30 | 拓扑选择 | `power-electronics/2026-11-30_src-prc-lcc-llc-matrix-v01.pdf` | Planned |
+| 2026-12-01 | LLC 模态 | `power-electronics/2026-12-01_llc-mode-boundaries-v01.pdf` | Planned |
+| 2026-12-03 | LLC 设计 | `power-electronics/2026-12-03_llc-design-worksheet-v01.xlsx` | Planned |
+| 2026-12-05 | 整流/保护/控制 | `power-electronics/2026-12-05_efficiency-protection-control-v01.pdf` | Planned |
+| 2026-12-07 | 多元件谐振 | `power-electronics/2026-12-07_multielement-vs-llc-v01.pdf` | Planned |
+| 2026-12-08 | ZCS | `power-electronics/2026-12-08_zcs-stress-comparison-v01.pdf` | Planned |
+| 2026-12-10 | ZVS/多谐振 | `power-electronics/2026-12-10_zcs-zvs-multiresonant-v01.pdf` | Planned |
+| 2026-12-12 | PWM 软开关 | `power-electronics/2026-12-12_soft-switching-selection-v01.pdf` | Planned |
+| 2026-12-14 | WPT 模型 | `power-electronics/2026-12-14_wpt-equivalent-model-v01.pdf` | Planned |
+| 2026-12-15 | 耦合/补偿 | `power-electronics/2026-12-15_coupler-compensation-matrix-v01.pdf` | Planned |
+| 2026-12-17 | 高频变换 | `power-electronics/2026-12-17_high-frequency-loss-chain-v01.pdf` | Planned |
+| 2026-12-19 | 综合成果 | `power-electronics/2026-12-19_datacentre-psu-research-map-v01.pdf` + 最小模型 | Planned |
 
-## 4. 四周一次的年审检查点
+## 5. 压缩周期的年审检查点
 
 | 截止日期 | 汇总成果 | 年审价值 |
 |---|---|---|
-| 2027-02-25 | 谐振拓扑选择矩阵 + 课程/研究映射 | 证明训练选择有明确研究目的 |
-| 2027-03-25 | LLC 设计、保护和多元件谐振小结 | 证明已从概念进入设计与权衡 |
-| 2027-04-22 | ZCS/ZVS/软开关对照 + 可复现小模型 | 证明分析和工具能力 |
-| 2027-05-13 | 数据中心 PSU 一页总图 + 模型/波形包 | 形成可放入年审附件的技术能力证据 |
+| 2026-11-28 | 课程映射、先修诊断、SRC 模态与设计包 | 证明压缩学习仍有明确研究目的和核查证据 |
+| 2026-12-05 | LLC 拓扑、模态、设计、保护与控制包 | 证明已从概念进入设计与权衡 |
+| 2026-12-12 | 多元件、ZCS/ZVS 与 PWM 软开关对照 | 证明分析和技术选择能力 |
+| 2026-12-19 | 数据中心 PSU 一页总图 + 模型/波形包 | 形成可放入年审附件的技术能力证据 |
 
 每个检查点压缩成一页：`问题 → 做了什么 → 证据 → 发现 → 局限 → 下一步`。如果课程成果不能连接到负荷预测、配网影响或数据中心连接研究，只放入 training 记录，不把它包装成主要研究结果。
 
-## 5. 年审材料建议结构
+## 6. 年审材料建议结构
 
 1. **研究问题与演化**：从负荷预测不确定性，到配网影响，再到连接/运行决策；
 2. **文献与证据基础**：来源、分类、关键 gap 和证据质量；
@@ -78,7 +88,7 @@ YYYY-MM-DD_topic_artifact-v01.ext
 6. **导师反馈与决策记录**：每次组会改变了什么；
 7. **下一阶段计划与风险**：数据、方法、范围、时间与缓解措施。
 
-## 6. 真实性边界
+## 7. 真实性边界
 
 - `Planned` 不能写成“已掌握”或“已完成”；
 - 合成数据结果只能证明代码可运行，不能作为研究结论；
