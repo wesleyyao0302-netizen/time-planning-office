@@ -71,6 +71,13 @@ def validate_schedule(payload: dict) -> None:
         end = datetime.fromisoformat(event["end"])
         if end <= start:
             raise ValueError(f"Event end must be after start: {event['id']}")
+        alarm_minutes = event.get("alarm_minutes_before")
+        if alarm_minutes is not None and (
+            not isinstance(alarm_minutes, int) or alarm_minutes < 0
+        ):
+            raise ValueError(
+                f"alarm_minutes_before must be a non-negative integer: {event['id']}"
+            )
         for excluded in event.get("exdate", []):
             datetime.fromisoformat(excluded)
 
@@ -136,7 +143,17 @@ def build(payload: dict) -> str:
         if event.get("exdate"):
             excluded = ",".join(compact_local(value) for value in event["exdate"])
             add(lines, f"EXDATE;TZID={tzid}", excluded)
-        lines.extend(["STATUS:CONFIRMED", "TRANSP:OPAQUE", "END:VEVENT"])
+        lines.append("STATUS:CONFIRMED")
+        lines.append(
+            "TRANSP:TRANSPARENT" if event.get("transparent") else "TRANSP:OPAQUE"
+        )
+        if event.get("alarm_minutes_before") is not None:
+            minutes = event["alarm_minutes_before"]
+            lines.extend(["BEGIN:VALARM", "ACTION:DISPLAY"])
+            add(lines, "DESCRIPTION", escape_text(event["title"]))
+            add(lines, "TRIGGER", f"-PT{minutes}M")
+            lines.append("END:VALARM")
+        lines.append("END:VEVENT")
 
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"

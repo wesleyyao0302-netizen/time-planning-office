@@ -34,6 +34,46 @@
       "description": "每周五晚上英语课程，共 12 次：2026-10-02 至 2026-12-18。"
     },
     {
+      "id": "phase-reminder-foundation-sprint",
+      "title": "阶段提醒 · 明日进入基础并行冲刺",
+      "start": "2026-09-29T18:00:00",
+      "end": "2026-09-29T18:15:00",
+      "categories": ["提醒", "学习阶段"],
+      "description": "明日开始 Python 补全；随后并行推进机器学习、本科电力电子与 Simulink。今晚只检查课程入口、代码环境和本阶段成果清单。",
+      "alarm_minutes_before": 1,
+      "transparent": true
+    },
+    {
+      "id": "phase-reminder-prerequisite-closeout",
+      "title": "阶段提醒 · 明日进入先修收口",
+      "start": "2026-11-08T18:00:00",
+      "end": "2026-11-08T18:15:00",
+      "categories": ["提醒", "学习阶段", "年审证据"],
+      "description": "明日开始先修收口阶段。核对 Python 包结构、机器学习对照实验、本科理论总图和缺失的成果链接；不新增支线课程。",
+      "alarm_minutes_before": 1,
+      "transparent": true
+    },
+    {
+      "id": "phase-reminder-graduate-sprint",
+      "title": "阶段提醒 · 明日进入研究生电力电子冲刺",
+      "start": "2026-11-22T18:00:00",
+      "end": "2026-11-22T18:15:00",
+      "categories": ["提醒", "学习阶段", "电力电子"],
+      "description": "明日开始四周研究生电力电子冲刺。确认本科总图、Simulink 作品集和本周科研成果可打开，再进入谐振、软开关与高频变换。",
+      "alarm_minutes_before": 1,
+      "transparent": true
+    },
+    {
+      "id": "phase-reminder-final-closeout",
+      "title": "阶段提醒 · 明日进入最终归档",
+      "start": "2026-12-17T18:00:00",
+      "end": "2026-12-17T18:15:00",
+      "categories": ["提醒", "学习阶段", "年审证据"],
+      "description": "明日下午为课程补漏与年审归档缓冲，12 月 19 日完成最终 PSU—PCC 研究映射。只补证据和缺口，不增加新视频。",
+      "alarm_minutes_before": 1,
+      "transparent": true
+    },
+    {
       "id": "research-framework-v01",
       "title": "深度工作 · 研究框架 v0.1",
       "start": "2026-09-25T08:45:00",

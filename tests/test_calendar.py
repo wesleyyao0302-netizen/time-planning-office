@@ -42,6 +42,19 @@ class CalendarTests(unittest.TestCase):
             any(event["id"].startswith("eng5292-") for event in self.payload["events"])
         )
 
+    def test_phase_reminders_are_included(self) -> None:
+        reminders = [
+            event
+            for event in self.payload["events"]
+            if event["id"].startswith("phase-reminder-")
+        ]
+        self.assertEqual(4, len(reminders))
+        self.assertTrue(all(event["start"].endswith("T18:00:00") for event in reminders))
+        self.assertTrue(all(event["alarm_minutes_before"] == 1 for event in reminders))
+        self.assertEqual(4, self.calendar.count("BEGIN:VALARM"))
+        self.assertEqual(4, self.calendar.count("TRIGGER:-PT1M"))
+        self.assertGreaterEqual(self.calendar.count("TRANSP:TRANSPARENT"), 4)
+
     def test_balanced_course_roadmap_is_included(self) -> None:
         event_ids = {event["id"] for event in self.payload["events"]}
         theory_ids = {
