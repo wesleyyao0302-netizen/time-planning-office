@@ -58,6 +58,15 @@ def compact_local(value: str) -> str:
 
 
 def validate_schedule(payload: dict) -> None:
+    default_alarm_minutes = payload.get("calendar", {}).get(
+        "default_alarm_minutes_before"
+    )
+    if default_alarm_minutes is not None and (
+        not isinstance(default_alarm_minutes, int) or default_alarm_minutes < 0
+    ):
+        raise ValueError(
+            "calendar.default_alarm_minutes_before must be a non-negative integer"
+        )
     seen: set[str] = set()
     for event in payload.get("events", []):
         required = {"id", "title", "start", "end"}
@@ -71,7 +80,9 @@ def validate_schedule(payload: dict) -> None:
         end = datetime.fromisoformat(event["end"])
         if end <= start:
             raise ValueError(f"Event end must be after start: {event['id']}")
-        alarm_minutes = event.get("alarm_minutes_before")
+        alarm_minutes = event.get(
+            "alarm_minutes_before", default_alarm_minutes
+        )
         if alarm_minutes is not None and (
             not isinstance(alarm_minutes, int) or alarm_minutes < 0
         ):
@@ -147,8 +158,11 @@ def build(payload: dict) -> str:
         lines.append(
             "TRANSP:TRANSPARENT" if event.get("transparent") else "TRANSP:OPAQUE"
         )
-        if event.get("alarm_minutes_before") is not None:
-            minutes = event["alarm_minutes_before"]
+        alarm_minutes = event.get(
+            "alarm_minutes_before", cal.get("default_alarm_minutes_before")
+        )
+        if alarm_minutes is not None:
+            minutes = alarm_minutes
             lines.extend(["BEGIN:VALARM", "ACTION:DISPLAY"])
             add(lines, "DESCRIPTION", escape_text(event["title"]))
             add(lines, "TRIGGER", f"-PT{minutes}M")

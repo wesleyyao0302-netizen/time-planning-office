@@ -50,10 +50,18 @@ class CalendarTests(unittest.TestCase):
         ]
         self.assertEqual(4, len(reminders))
         self.assertTrue(all(event["start"].endswith("T18:00:00") for event in reminders))
-        self.assertTrue(all(event["alarm_minutes_before"] == 1 for event in reminders))
-        self.assertEqual(4, self.calendar.count("BEGIN:VALARM"))
-        self.assertEqual(4, self.calendar.count("TRIGGER:-PT1M"))
+        self.assertTrue(all(event["alarm_minutes_before"] == 10 for event in reminders))
+        self.assertEqual(
+            len(self.payload["events"]), self.calendar.count("BEGIN:VALARM")
+        )
+        self.assertEqual(
+            len(self.payload["events"]), self.calendar.count("TRIGGER:-PT10M")
+        )
         self.assertGreaterEqual(self.calendar.count("TRANSP:TRANSPARENT"), 4)
+
+    def test_every_event_has_ten_minute_alarm(self) -> None:
+        self.assertEqual(10, self.payload["calendar"]["default_alarm_minutes_before"])
+        self.assertNotIn("TRIGGER:-PT1M", self.calendar)
 
     def test_balanced_course_roadmap_is_included(self) -> None:
         event_ids = {event["id"] for event in self.payload["events"]}
