@@ -31,15 +31,16 @@ class CalendarTests(unittest.TestCase):
     def test_required_recurring_events(self) -> None:
         self.assertIn("weekly-group-meeting@skun-research-time-workstation", self.calendar)
         self.assertIn("RRULE:FREQ=WEEKLY;BYDAY=WE", self.calendar)
-        self.assertIn("RRULE:FREQ=WEEKLY;BYDAY=MO;COUNT=9", self.calendar)
         self.assertIn("english-course-wednesday-2026@skun-research-time-workstation", self.calendar)
         self.assertIn("RRULE:FREQ=WEEKLY;BYDAY=WE;COUNT=12", self.calendar)
         self.assertIn("english-course-friday-2026@skun-research-time-workstation", self.calendar)
         self.assertIn("RRULE:FREQ=WEEKLY;BYDAY=FR;COUNT=12", self.calendar)
 
-    def test_course_locations(self) -> None:
-        self.assertIn("JMS Learning Hub\\, Room 743", self.calendar)
-        self.assertIn("Boyd Orr Building\\, Room 407 (Lecture Theatre A)", self.calendar)
+    def test_eng5292_is_removed(self) -> None:
+        self.assertNotIn("ENG 5292", self.calendar)
+        self.assertFalse(
+            any(event["id"].startswith("eng5292-") for event in self.payload["events"])
+        )
 
     def test_balanced_course_roadmap_is_included(self) -> None:
         event_ids = {event["id"] for event in self.payload["events"]}

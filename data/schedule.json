@@ -34,43 +34,6 @@
       "description": "每周五晚上英语课程，共 12 次：2026-10-02 至 2026-12-18。"
     },
     {
-      "id": "eng5292-20260925-1100",
-      "title": "ENG 5292 · Power Electronics and Drives M",
-      "start": "2026-09-25T11:00:00",
-      "end": "2026-09-25T12:00:00",
-      "location": "JMS Learning Hub, Room 743",
-      "categories": ["课程", "ENG 5292"],
-      "description": "授课教师：Mohammad Yazdani-Asrami。课表中的 JMS:743 按 JMS Learning Hub 743 记录。"
-    },
-    {
-      "id": "eng5292-20260925-1300",
-      "title": "ENG 5292 · Power Electronics and Drives M",
-      "start": "2026-09-25T13:00:00",
-      "end": "2026-09-25T14:00:00",
-      "location": "JMS Learning Hub, Room 743",
-      "categories": ["课程", "ENG 5292"],
-      "description": "授课教师：Mohammad Yazdani-Asrami。课表中的 JMS:743 按 JMS Learning Hub 743 记录。"
-    },
-    {
-      "id": "eng5292-monday-2026",
-      "title": "ENG 5292 · Power Electronics and Drives M",
-      "start": "2026-09-28T13:00:00",
-      "end": "2026-09-28T14:00:00",
-      "rrule": "FREQ=WEEKLY;BYDAY=MO;COUNT=9",
-      "location": "JMS Learning Hub, Room 743",
-      "categories": ["课程", "ENG 5292"],
-      "description": "每周一上课，共 9 次：2026-09-28 至 2026-11-23。授课教师：Mohammad Yazdani-Asrami。"
-    },
-    {
-      "id": "eng5292-20261126-1400",
-      "title": "ENG 5292 · Power Electronics and Drives M",
-      "start": "2026-11-26T14:00:00",
-      "end": "2026-11-26T16:00:00",
-      "location": "Boyd Orr Building, Room 407 (Lecture Theatre A)",
-      "categories": ["课程", "ENG 5292"],
-      "description": "课表原文：CTT BOYD ORR:407 (LT A)。授课教师：Mohammad Yazdani-Asrami。"
-    },
-    {
       "id": "research-framework-v01",
       "title": "深度工作 · 研究框架 v0.1",
       "start": "2026-09-25T08:45:00",
@@ -424,7 +387,7 @@
       "end": "2026-11-19T21:00:00",
       "url": "https://space.bilibili.com/519909115/lists/1351814?type=season",
       "categories": ["电力电子", "本科课程", "学习"],
-      "description": "观看 CH13.2 PWM 逆变（01:31:18；原视频注明第一部分丢失），用 ENG 5292 与蓝库 08 补缺。输出：拓扑 × 控制 × PCC 影响总图。"
+      "description": "观看 CH13.2 PWM 逆变（01:31:18；原视频注明第一部分丢失），用蓝库 08 与独立技术资料补缺。输出：拓扑 × 控制 × PCC 影响总图。"
     },
     {
       "id": "simulink-black-01-02",
