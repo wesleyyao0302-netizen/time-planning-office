@@ -1,7 +1,7 @@
 {
   "calendar": {
     "name": "Skun · 科研、课程与组会",
-    "description": "University of Glasgow 课程、科研、Python、机器学习、电力电子与每周组会",
+    "description": "University of Glasgow 课程、科研、Python、机器学习、电力电子本科/研究生与每周组会",
     "timezone": "Europe/London",
     "product_id": "-//Skun//Research Time Workstation//ZH-CN"
   },
@@ -177,7 +177,7 @@
       "rrule": "FREQ=WEEKLY;BYDAY=MO;COUNT=16",
       "exdate": ["2026-12-21T09:00:00", "2026-12-28T09:00:00"],
       "categories": ["科研", "深度工作"],
-      "description": "保护科研主线：明确本周研究问题、数据边界、假设和最小实验。每周必须留下研究日志与可交付清单；圣诞两周暂停。"
+      "description": "保护科研主线：明确本周研究问题、数据边界、假设和最小实验。必须留下研究日志、可交付清单并登记成果路径；圣诞两周暂停。"
     },
     {
       "id": "research-core-tuesday-2026-27",
@@ -187,7 +187,7 @@
       "rrule": "FREQ=WEEKLY;BYDAY=TU;COUNT=16",
       "exdate": ["2026-12-22T09:00:00", "2026-12-29T09:00:00"],
       "categories": ["科研", "深度工作"],
-      "description": "实现或运行本周最小实验，保存代码、配置、随机种子和结果；课程知识只在能够推进当前研究问题时引入。圣诞两周暂停。"
+      "description": "实现或运行本周最小实验，保存代码、配置、随机种子和结果并登记成果路径；课程知识只在能够推进当前研究问题时引入。圣诞两周暂停。"
     },
     {
       "id": "research-synthesis-wednesday-2026-27",
@@ -197,7 +197,7 @@
       "rrule": "FREQ=WEEKLY;BYDAY=WE;COUNT=17",
       "exdate": ["2026-12-23T09:00:00", "2026-12-30T09:00:00"],
       "categories": ["科研", "组会准备"],
-      "description": "把本周工作压缩为一页：结果图/表、证据、限制、一个待导师决策的问题和下一步。圣诞两周暂停；组会本身是否取消以导师通知为准。"
+      "description": "把本周工作压缩为一页：结果图/表、证据、限制、一个待导师决策的问题和下一步；组会后登记反馈。圣诞两周暂停；组会是否取消以导师通知为准。"
     },
     {
       "id": "research-core-thursday-2026-27",
@@ -207,7 +207,7 @@
       "rrule": "FREQ=WEEKLY;BYDAY=TH;COUNT=17",
       "exdate": ["2026-12-24T09:00:00", "2026-12-31T09:00:00"],
       "categories": ["科研", "深度工作"],
-      "description": "核查时间切分、data leakage、单位、公式和关键假设；补做对照/敏感性分析。圣诞两周暂停。"
+      "description": "核查时间切分、data leakage、单位、公式和关键假设；补做对照/敏感性分析并登记检查结果。圣诞两周暂停。"
     },
     {
       "id": "research-core-friday-2026-27",
@@ -217,7 +217,7 @@
       "rrule": "FREQ=WEEKLY;BYDAY=FR;COUNT=17",
       "exdate": ["2026-12-25T09:00:00", "2027-01-01T09:00:00"],
       "categories": ["科研", "深度工作"],
-      "description": "整理图表、实验日志、代码状态和仍不确定之处；为下周留下可直接启动的入口。圣诞两周暂停。"
+      "description": "整理图表、实验日志、代码状态和仍不确定之处；冻结本周成果路径，为下周留下可直接启动的入口。圣诞两周暂停。"
     },
     {
       "id": "power-electronics-undergrad-01",
@@ -583,6 +583,237 @@
       "end": "2027-01-19T20:30:00",
       "categories": ["机器学习", "负荷预测", "科研输出"],
       "description": "在同一测试期比较经典基线与 LSTM，不以复杂度代替证据；输出总体/分时误差、残差分布、P50/P90 或经验区间初稿及可向导师确认的问题。"
+    },
+    {
+      "id": "research-core-monday-2027-spring-summer",
+      "title": "科研核心时间 · 问题与数据",
+      "start": "2027-01-25T09:00:00",
+      "end": "2027-01-25T12:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=MO;COUNT=24",
+      "exdate": ["2027-05-03T09:00:00", "2027-05-31T09:00:00"],
+      "categories": ["科研", "深度工作"],
+      "description": "第二阶段科研保护时间：明确本周问题、数据边界、假设和最小实验。仅英国银行假日暂停；课程不得占用本时间块。每次必须登记可核查成果。"
+    },
+    {
+      "id": "research-core-tuesday-2027-spring-summer",
+      "title": "科研核心时间 · 模型与实验",
+      "start": "2027-01-26T09:00:00",
+      "end": "2027-01-26T12:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=TU;COUNT=24",
+      "categories": ["科研", "深度工作"],
+      "description": "第二阶段科研保护时间：实现本周最小实验并保存代码、配置、数据版本和结果。课程知识只按当前研究问题调用；每次必须登记可核查成果。"
+    },
+    {
+      "id": "research-synthesis-wednesday-2027-spring-summer",
+      "title": "科研整合 · 组会材料",
+      "start": "2027-01-27T09:00:00",
+      "end": "2027-01-27T11:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=WE;COUNT=24",
+      "categories": ["科研", "组会准备"],
+      "description": "第二阶段组会准备：一页结果/证据/限制、一个待导师决策的问题和下一步，并登记导师反馈。组会是否举行以导师通知为准。"
+    },
+    {
+      "id": "research-core-thursday-2027-spring-summer",
+      "title": "科研核心时间 · 分析与验证",
+      "start": "2027-01-28T09:00:00",
+      "end": "2027-01-28T12:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=TH;COUNT=24",
+      "categories": ["科研", "深度工作"],
+      "description": "第二阶段科研保护时间：核查时间切分、数据泄漏、单位、假设并补做对照/敏感性分析。晚间课程不得挤压本时间块；每次必须登记可核查成果。"
+    },
+    {
+      "id": "research-core-friday-2027-spring-summer",
+      "title": "科研核心时间 · 结果与记录",
+      "start": "2027-01-29T09:00:00",
+      "end": "2027-01-29T12:00:00",
+      "rrule": "FREQ=WEEKLY;BYDAY=FR;COUNT=24",
+      "categories": ["科研", "深度工作"],
+      "description": "第二阶段科研保护时间：整理图表、实验日志、代码状态和不确定性，为下周留下可直接启动的入口；每次必须登记成果路径。"
+    },
+    {
+      "id": "power-electronics-graduate-01",
+      "title": "电力电子（研）01/16 · 课程框架与研究映射",
+      "start": "2027-01-28T18:30:00",
+      "end": "2027-01-28T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=1",
+      "categories": ["电力电子", "研究生课程", "科研学习"],
+      "description": "观看 P1–P2 课程介绍（上 01:25:18；下 00:40:25），建议 1.25×。输出：课程地图，标出与数据中心电源、效率、可靠性及 PCC 影响的直接/间接关系。"
+    },
+    {
+      "id": "power-electronics-graduate-02",
+      "title": "电力电子（研）02/16 · 本科知识诊断",
+      "start": "2027-02-04T18:30:00",
+      "end": "2027-02-04T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=3",
+      "categories": ["电力电子", "研究生课程", "科研学习"],
+      "description": "观看 P3–P4：1.1、1.2 本科知识回顾与深入（01:27:59 + 01:38:39），建议 1.5×。不重复整套笔记；输出已掌握/证据不足/需回看诊断表。"
+    },
+    {
+      "id": "power-electronics-graduate-03",
+      "title": "电力电子（研）03/16 · 谐振介绍与串联基本模态",
+      "start": "2027-02-11T18:30:00",
+      "end": "2027-02-11T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=5",
+      "categories": ["电力电子", "研究生课程", "谐振变换器"],
+      "description": "观看 P5 2.1 谐振变换器介绍（01:19:14）与 P6 2.2A 串联谐振基本模态/软开关（01:30:13），建议 1.25×。输出工作模态和软开关条件图。"
+    },
+    {
+      "id": "power-electronics-graduate-04",
+      "title": "电力电子（研）04/16 · 串联谐振轨迹、增益与设计",
+      "start": "2027-02-18T18:30:00",
+      "end": "2027-02-18T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=7",
+      "categories": ["电力电子", "研究生课程", "谐振变换器"],
+      "description": "观看 P7 2.2B 状态轨迹/增益（01:29:56）与 P8 2.2C 设计（00:39:52）。输出增益曲线、设计变量、约束和一个手算检查点。"
+    },
+    {
+      "id": "power-electronics-graduate-05",
+      "title": "电力电子（研）05/16 · PRC、LCC 与 LLC 背景",
+      "start": "2027-02-25T18:30:00",
+      "end": "2027-02-25T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=9",
+      "categories": ["电力电子", "研究生课程", "谐振变换器"],
+      "description": "观看 P9 并联谐振（00:57:11）、P10 LCC（00:37:23）、P11 LLC 兴起背景（00:36:40）。输出 SRC/PRC/LCC/LLC 选择矩阵。"
+    },
+    {
+      "id": "power-electronics-graduate-06",
+      "title": "电力电子（研）06/16 · LLC 模态分析",
+      "start": "2027-03-04T18:30:00",
+      "end": "2027-03-04T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=12",
+      "categories": ["电力电子", "研究生课程", "LLC"],
+      "description": "观看 P12 2.5B LLC 模态分析（01:28:17）。输出模态分段、关键波形、边界条件和仍不清楚的推导。"
+    },
+    {
+      "id": "power-electronics-graduate-07",
+      "title": "电力电子（研）07/16 · LLC 优化设计",
+      "start": "2027-03-11T18:30:00",
+      "end": "2027-03-11T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=13",
+      "categories": ["电力电子", "研究生课程", "LLC"],
+      "description": "观看 P13 2.5C LLC 优化设计（01:35:41）。输出一页 LLC design worksheet：指标、变量、约束、损耗与验证方式。"
+    },
+    {
+      "id": "power-electronics-graduate-08",
+      "title": "电力电子（研）08/16 · 同步整流、保护与轨迹控制",
+      "start": "2027-03-18T18:30:00",
+      "end": "2027-03-18T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=14",
+      "categories": ["电力电子", "研究生课程", "LLC", "可靠性"],
+      "description": "观看 P14 2.5D 同步整流（01:15:02）与 P15 2.5E/F 软启动、短路保护、轨迹控制（01:20:22），建议 1.25×。输出效率—保护—控制权衡表。"
+    },
+    {
+      "id": "power-electronics-graduate-09",
+      "title": "电力电子（研）09/16 · 多元件谐振变换器",
+      "start": "2027-03-25T18:30:00",
+      "end": "2027-03-25T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=16",
+      "categories": ["电力电子", "研究生课程", "谐振变换器"],
+      "description": "观看 P16 2.6 多元件谐振变换器（01:31:14）。输出与 LLC 的元件数、控制难度、效率区间和设计收益比较，并登记到年审证据台账。"
+    },
+    {
+      "id": "power-electronics-graduate-10",
+      "title": "电力电子（研）10/16 · ZCS 半波与全波",
+      "start": "2027-04-01T18:30:00",
+      "end": "2027-04-01T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=17",
+      "categories": ["电力电子", "研究生课程", "软开关"],
+      "description": "观看 P17–P18：ZCS 准谐振半波（01:24:29）与全波（01:03:45），建议 1.25×。输出 ZCS 条件和器件应力比较，并登记到年审证据台账。"
+    },
+    {
+      "id": "power-electronics-graduate-11",
+      "title": "电力电子（研）11/16 · ZVS 与多谐振",
+      "start": "2027-04-08T18:30:00",
+      "end": "2027-04-08T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=19",
+      "categories": ["电力电子", "研究生课程", "软开关"],
+      "description": "观看 P19 3.3 ZVS 准谐振（00:50:46）与 P20 多谐振变换器（00:48:19）。输出 ZCS/ZVS/多谐振的开关条件、损耗和复杂度比较图。"
+    },
+    {
+      "id": "power-electronics-graduate-12",
+      "title": "电力电子（研）12/16 · PWM 软开关与 ZVT",
+      "start": "2027-04-15T18:30:00",
+      "end": "2027-04-15T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=21",
+      "categories": ["电力电子", "研究生课程", "软开关"],
+      "description": "观看 P21 5.1 临界导通模式（01:27:53）与 P22 5.2 ZVT（00:36:07）。输出 PWM 软开关技术选择表及损耗/控制代价。"
+    },
+    {
+      "id": "power-electronics-graduate-13",
+      "title": "电力电子（研）13/16 · 无线电能传输历史与耦合器模型",
+      "start": "2027-04-22T18:30:00",
+      "end": "2027-04-22T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=23",
+      "categories": ["电力电子", "研究生课程", "拓展"],
+      "description": "观看 P23 6.1 历史回顾（00:32:25）与 P24 6.2 耦合器模型（01:21:54）。本部分为拓展背景；输出一页压缩笔记与等效模型，不追加大型仿真。"
+    },
+    {
+      "id": "power-electronics-graduate-14",
+      "title": "电力电子（研）14/16 · 耦合器结构与补偿网络",
+      "start": "2027-04-29T18:30:00",
+      "end": "2027-04-29T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=25",
+      "categories": ["电力电子", "研究生课程", "拓展"],
+      "description": "观看 P25 6.3 耦合器结构（00:44:24）与 P26 6.4 补偿网络（01:29:57）。输出结构—补偿—效率关系表；保持压缩学习，不偏离负荷预测主线。"
+    },
+    {
+      "id": "power-electronics-graduate-15",
+      "title": "电力电子（研）15/16 · 最优效率、CPT 与高频变换",
+      "start": "2027-05-06T18:30:00",
+      "end": "2027-05-06T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/?p=27",
+      "categories": ["电力电子", "研究生课程", "高频变换"],
+      "description": "观看 P27 6.5 最优效率/CPT（00:38:37）与 P28 高频逆变与整流（01:36:34）。输出高频变换损耗链、效率图和数据中心电源关联。"
+    },
+    {
+      "id": "power-electronics-graduate-16",
+      "title": "电力电子（研）16/16 · 数据中心 PSU 研究映射",
+      "start": "2027-05-13T18:30:00",
+      "end": "2027-05-13T21:00:00",
+      "url": "https://www.bilibili.com/video/BV1b24y1d7zu/",
+      "categories": ["电力电子", "研究生课程", "科研输出"],
+      "description": "不追新视频。输出一页：数据中心 PSU 的拓扑—控制—损耗—热应力—可靠性—PCC 影响；如研究周成果已完成，再做一个最小 LLC/软开关 Simulink 复现。"
+    },
+    {
+      "id": "load-forecast-freeze-00",
+      "title": "负荷预测成果冻结 0 · 数据与季节基线",
+      "start": "2026-10-02T12:00:00",
+      "end": "2026-10-02T12:20:00",
+      "url": "https://ukpowernetworks.opendatasoft.com/explore/assets/ukpn-smart-meter-consumption-substation/",
+      "categories": ["负荷预测", "科研成果", "年审证据"],
+      "description": "冻结并登记：数据来源/许可证/字段/单位/时间范围、预测边界、t-48/t-336/均值基线脚本。若 UKPN 数据 24 小时内仍不可用，切换 Low Carbon London 真实数据。"
+    },
+    {
+      "id": "load-forecast-freeze-01",
+      "title": "负荷预测成果冻结 1 · 真实数据 baseline",
+      "start": "2026-10-09T12:00:00",
+      "end": "2026-10-09T12:20:00",
+      "categories": ["负荷预测", "科研成果", "年审证据"],
+      "description": "冻结并登记：真实数据清洗版本、Naive/线性结果表、最后 7 天预测图、运行命令和一句可核查结论。禁止继续调参拖延冻结。"
+    },
+    {
+      "id": "load-forecast-freeze-02",
+      "title": "负荷预测成果冻结 2 · EDA、特征与泄漏检查",
+      "start": "2026-10-16T12:00:00",
+      "end": "2026-10-16T12:20:00",
+      "categories": ["负荷预测", "科研成果", "年审证据"],
+      "description": "冻结并登记：缺失/异常/周期图、特征可用时点表、lag/rolling 代码、训练期拟合检查和 data leakage 清单。"
+    },
+    {
+      "id": "load-forecast-freeze-03",
+      "title": "负荷预测成果冻结 3 · 模型与滚动验证",
+      "start": "2026-10-23T12:00:00",
+      "end": "2026-10-23T12:20:00",
+      "categories": ["负荷预测", "科研成果", "年审证据"],
+      "description": "冻结并登记：统一窗口下的 seasonal naive、LR、RF、Boosting 表；rolling-origin 结果、峰值时段误差、耗时和失败模型。"
+    },
+    {
+      "id": "load-forecast-freeze-04",
+      "title": "负荷预测成果冻结 4 · P50/P90 成果包",
+      "start": "2026-10-30T12:00:00",
+      "end": "2026-10-30T12:30:00",
+      "categories": ["负荷预测", "科研成果", "年审证据", "组会准备"],
+      "description": "冻结 v0.1 成果包：两张核心图、一张模型表、P50/P90 pinball loss 与校准检查、两页 brief、复现 README、限制和下一步配网/数据中心实验。"
     }
   ]
 }

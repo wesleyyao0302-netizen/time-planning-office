@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import sys
 import unittest
+from datetime import datetime, timedelta
 from pathlib import Path
 
 
@@ -78,12 +79,77 @@ class CalendarTests(unittest.TestCase):
             sum(event_id.startswith("ml-load-forecasting-") for event_id in event_ids),
         )
 
+    def test_graduate_course_and_annual_review_outputs(self) -> None:
+        graduate = [
+            event
+            for event in self.payload["events"]
+            if event["id"].startswith("power-electronics-graduate-")
+        ]
+        freezes = [
+            event
+            for event in self.payload["events"]
+            if event["id"].startswith("load-forecast-freeze-")
+        ]
+        self.assertEqual(16, len(graduate))
+        self.assertEqual("2027-01-28T18:30:00", min(event["start"] for event in graduate))
+        self.assertEqual("2027-05-13T18:30:00", max(event["start"] for event in graduate))
+        self.assertTrue(all("输出" in event["description"] for event in graduate))
+        self.assertEqual(5, len(freezes))
+        self.assertTrue((ROOT / "LOAD_FORECAST_SPRINT.md").is_file())
+        self.assertTrue((ROOT / "ANNUAL_REVIEW_EVIDENCE.md").is_file())
+
     def test_research_blocks_pause_for_winter_break(self) -> None:
         self.assertIn("research-core-monday-2026-27@skun-research-time-workstation", self.calendar)
         self.assertIn(
             "EXDATE;TZID=Europe/London:20261221T090000,20261228T090000",
             self.calendar.replace("\r\n ", ""),
         )
+
+    def test_second_research_stage_continues_without_exam_break(self) -> None:
+        event = next(
+            item
+            for item in self.payload["events"]
+            if item["id"] == "research-core-thursday-2027-spring-summer"
+        )
+        self.assertEqual("FREQ=WEEKLY;BYDAY=TH;COUNT=24", event["rrule"])
+        self.assertNotIn("exdate", event)
+
+    def test_expanded_schedule_has_no_time_conflicts(self) -> None:
+        end_of_check = datetime(2027, 7, 10)
+        instances: list[tuple[datetime, datetime, str]] = []
+        for event in self.payload["events"]:
+            start = datetime.fromisoformat(event["start"])
+            end = datetime.fromisoformat(event["end"])
+            starts = [start]
+            if event.get("rrule", "").startswith("FREQ=WEEKLY"):
+                count = next(
+                    (
+                        int(part.split("=", 1)[1])
+                        for part in event["rrule"].split(";")
+                        if part.startswith("COUNT=")
+                    ),
+                    ((end_of_check - start).days // 7) + 1,
+                )
+                starts = [start + timedelta(days=7 * index) for index in range(count)]
+            excluded = {
+                datetime.fromisoformat(value) for value in event.get("exdate", [])
+            }
+            for occurrence in starts:
+                if occurrence in excluded or occurrence >= end_of_check:
+                    continue
+                instances.append(
+                    (occurrence, occurrence + (end - start), event["id"])
+                )
+
+        instances.sort()
+        conflicts: list[tuple[str, str, datetime]] = []
+        for index, first in enumerate(instances):
+            for second in instances[index + 1 :]:
+                if second[0] >= first[1]:
+                    break
+                if first[0] < second[1]:
+                    conflicts.append((first[2], second[2], first[0]))
+        self.assertEqual([], conflicts)
 
 
 if __name__ == "__main__":

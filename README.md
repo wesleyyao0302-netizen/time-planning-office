@@ -1,10 +1,12 @@
 # Research Time Workstation
 
-这是一个已发布到 GitHub Pages 的“科研时间规划工作站”。它把 University of Glasgow 课程、科研保护时间、Python、机器学习、电力电子理论/仿真和每周组会写在同一份标准 iCalendar 日历中，并提供稳定订阅地址。
+这是一个已发布到 GitHub Pages 的“科研时间规划工作站”。它把 University of Glasgow 课程、科研保护时间、Python、机器学习、电力电子本科/研究生理论与仿真、每周组会和年审证据节点写在同一份标准 iCalendar 日历中，并提供稳定订阅地址。
 
 - 在线工作站：<https://wesleyyao0302-netizen.github.io/time-planning-office/>
 - HTTPS 日历：<https://wesleyyao0302-netizen.github.io/time-planning-office/calendar.ics>
 - 详细路线：[COURSE_ROADMAP.md](COURSE_ROADMAP.md)
+- 负荷预测快速成果：[LOAD_FORECAST_SPRINT.md](LOAD_FORECAST_SPRINT.md)
+- 年审证据台账：[ANNUAL_REVIEW_EVIDENCE.md](ANNUAL_REVIEW_EVIDENCE.md)
 
 当前版本已经包含：
 
@@ -14,8 +16,11 @@
 - 2026-09-25、09-28、09-29 的科研与 Python 时间块；
 - 每周 14 小时科研保护块（圣诞两周暂停），周日留空；
 - 傅旻帆《电力电子（本科）》24 讲，分 15 个周四完成；
+- 傅旻帆《电力电子（研）》28 讲，本科结束后复用周四晚，分 15 个学习块和 1 个研究映射块完成；
 - MATLAB/Simulink 黑库 8 讲、蓝库 10 讲及 2 次综合实作；
 - 李沐《实用机器学习》负荷预测选段，以及 RNN/LSTM 对照阶段；
+- 2026-09-28 至 10-30 的负荷预测快速成果冲刺与五次周五成果冻结；
+- 每项科研/课程工作的成果路径、结论、限制、导师反馈和下一步台账；
 - 一个可直接运行的负荷预测 baseline 脚手架；
 - 自动生成、测试并发布 `calendar.ics` 的 GitHub Actions 工作流。
 
@@ -100,7 +105,9 @@ GitHub Actions 会重新生成并发布日历。已经订阅的设备会按各�
 
 ## 4. 课程—科研长期路线
 
-详细安排见 [COURSE_ROADMAP.md](COURSE_ROADMAP.md)。固定节奏为：周二晚机器学习与负荷预测代码、周四晚电力电子理论、周六上午 Simulink；周一至周五上午优先保护科研，周日留空。课程学习必须产生代码、图表、模型或对照表，不能只以“看完视频”计进度。
+详细安排见 [COURSE_ROADMAP.md](COURSE_ROADMAP.md)。固定节奏为：周二晚机器学习与负荷预测代码、周四晚电力电子理论、周六上午 Simulink；周一至周五上午优先保护科研，周日留空。研究型硕士不设置考试周停研；课程学习必须产生代码、图表、模型、推导或对照表并登记到 [年审证据台账](ANNUAL_REVIEW_EVIDENCE.md)，不能只以“看完视频”计进度。
+
+近期最高优先级是 [负荷预测快速成果冲刺](LOAD_FORECAST_SPRINT.md)：最迟 2026-10-30 形成真实数据、泄漏安全的基线/树模型比较、P50/P90 初稿、两张图、一张表和两页 brief。电力电子（研）是第二优先级；当周负荷预测没有形成可核查成果时，研究生课程顺延。
 
 ## 5. 本周交付逻辑
 
