@@ -1,97 +1,86 @@
-# 年审成果与证据台账
+# 年审证据台账
 
-这份台账把“做过什么”转化为可核查的 evidence。它记录的是文件、代码、模型、图表、结论与决策，不把观看视频、阅读时长或模糊的“了解了”作为成果。
+科研时间：周一、二、四、五、六、日每日4小时；周三组会准备与会议单列。每个科研日必须留下可复现代码、结果图、实验日志或证据表。周日整理下周最小实验，不视为休息日。
 
-## 1. 每类时间块的最低成果
+状态：Planned / In progress / Evidence ready / Reviewed。以下均为计划，不表示已完成。
 
-| 时间块 | 最低可接受成果 | 完成判据 |
-|---|---|---|
-| 周一：问题与数据 | 一页研究问题/数据边界，或更新后的数据字典 | 文件已保存；写明本周要减少的一个不确定性 |
-| 周二：模型与实验 | 代码提交 + 实验配置 + 原始结果 | 能从固定输入重新运行；记录数据版本与时间切分 |
-| 周三：组会准备 | 一页结果、限制、导师决策问题 | 能在 3 分钟内讲清；组会后补记反馈 |
-| 周四上午：分析与验证 | 泄漏/单位/假设检查，或对照/敏感性分析 | 至少记录一项通过、一项风险和处理决定 |
-| 周五：结果与记录 | 周总结 + 下周最小实验 | 所有证据链接可打开；未完成项有原因和新日期 |
-| 电力电子理论 | 推导页、拓扑/器件对照表或研究映射 | 至少一个公式/图表经过手算或第二来源核对 |
-| MATLAB/Simulink | 模型、参数表、关键波形、理论误差 | 模型可运行；记录求解器/采样时间与异常解释 |
-| 机器学习 | Notebook/脚本、指标表、预测图 | chronological split；基线和数据泄漏检查齐全 |
-| 电力电子（研） | 推导/设计表/最小模型 + 数据中心 PSU 映射 | 不仅复述课程；明确与效率、可靠性或 PCC 的关系 |
-
-英语课程和一般行政任务不作为核心研究成果，但可在年审的 training/professional development 部分列为参与记录。
-
-## 2. 统一记录格式
-
-每项成果使用文件名：
-
-```text
-YYYY-MM-DD_topic_artifact-v01.ext
-```
-
-每周在下面追加一行：
-
-| 日期 | 研究问题/任务 | 成果路径或链接 | 一句话结论 | 限制/负面结果 | 导师反馈 | 下一步 | 状态 |
+| 日期 | 研究问题 | 文件/代码链接 | 结论 | 限制 | 导师反馈 | 下一步 | 状态 |
 |---|---|---|---|---|---|---|---|
-| YYYY-MM-DD | 示例：lag-168 是否改善周周期负荷预测？ | `research/...` | 示例：验证集 MAE 降低，但峰值误差仍大 | 数据仅为合成数据 | 待讨论 | 换真实数据并按负荷水平分层 | Planned |
+| YYYY-MM-DD | 待填 | 待填 | 待填 | 待填 | 待填 | 待填 | Planned |
 
-状态只使用：`Planned`、`In progress`、`Evidence ready`、`Reviewed`。只有成果路径可打开时才能使用 `Evidence ready`。
+## 课程成果截止（按模块最后一段）
 
-## 3. Python 完整课程成果关口
-
-| 截止日期 | 必须归档的成果 | 状态 |
-|---|---|---|
-| 2026-09-29 | `python/2026-09-29_load-csv-baseline-fast-track-v01.py` + 运行记录 | Planned |
-| 2026-10-28 | `python/2026-10-28_forecast-experiment-classes-v01.py` + 测试 | Planned |
-| 2026-11-18 | `python/2026-11-18_load-forecast-package-v01/`（模块、测试、README） | Planned |
-
-速通只证明可以开始研究代码；11 月 18 日的包结构、测试和复现说明才构成完整课程的收口证据。
-
-## 4. 电力电子（研）成果登记
-
-以下均为计划，不代表已经完成。
-
-| 日期 | 阶段 | 必须归档的成果 | 状态 |
+| 截止日期 | 模块 | 建议成果目录 | 状态 |
 |---|---|---|---|
-| 2026-11-23 | 课程框架 | `power-electronics/2026-11-23_course-research-map-v01.pdf` | Planned |
-| 2026-11-24 | 本科诊断 | `power-electronics/2026-11-24_prerequisite-gap-table-v01.xlsx` | Planned |
-| 2026-11-26 | 谐振基本模态 | `power-electronics/2026-11-26_resonant-modes-zvs-map-v01.pdf` | Planned |
-| 2026-11-28 | SRC 设计 | `power-electronics/2026-11-28_src-gain-design-sheet-v01.xlsx` | Planned |
-| 2026-11-30 | 拓扑选择 | `power-electronics/2026-11-30_src-prc-lcc-llc-matrix-v01.pdf` | Planned |
-| 2026-12-01 | LLC 模态 | `power-electronics/2026-12-01_llc-mode-boundaries-v01.pdf` | Planned |
-| 2026-12-03 | LLC 设计 | `power-electronics/2026-12-03_llc-design-worksheet-v01.xlsx` | Planned |
-| 2026-12-05 | 整流/保护/控制 | `power-electronics/2026-12-05_efficiency-protection-control-v01.pdf` | Planned |
-| 2026-12-07 | 多元件谐振 | `power-electronics/2026-12-07_multielement-vs-llc-v01.pdf` | Planned |
-| 2026-12-08 | ZCS | `power-electronics/2026-12-08_zcs-stress-comparison-v01.pdf` | Planned |
-| 2026-12-10 | ZVS/多谐振 | `power-electronics/2026-12-10_zcs-zvs-multiresonant-v01.pdf` | Planned |
-| 2026-12-12 | PWM 软开关 | `power-electronics/2026-12-12_soft-switching-selection-v01.pdf` | Planned |
-| 2026-12-14 | WPT 模型 | `power-electronics/2026-12-14_wpt-equivalent-model-v01.pdf` | Planned |
-| 2026-12-15 | 耦合/补偿 | `power-electronics/2026-12-15_coupler-compensation-matrix-v01.pdf` | Planned |
-| 2026-12-17 | 高频变换 | `power-electronics/2026-12-17_high-frequency-loss-chain-v01.pdf` | Planned |
-| 2026-12-19 | 综合成果 | `power-electronics/2026-12-19_datacentre-psu-research-map-v01.pdf` + 最小模型 | Planned |
+| 2026-09-28 | Python 速通 2/3 · 控制流、列表与函数 | evidence/2026-09-28_python-fast-track-2/ | Planned |
+| 2026-09-29 | Python 速通 3/3 · 文件读写与异常 | evidence/2026-09-29_python-fast-track-3/ | Planned |
+| 2026-09-29 | Python 补全 1/8 · 游戏、输入与流程设计 | evidence/2026-09-29_python-complete-01/ | Planned |
+| 2026-10-01 | 电力电子本科 01/24 · CH1 基础应用 | evidence/2026-10-01_power-electronics-undergrad-01/ | Planned |
+| 2026-10-03 | 电力电子本科 02/24 · Buck 稳态分析 | evidence/2026-10-03_power-electronics-undergrad-02/ | Planned |
+| 2026-10-03 | Simulink 黑库 01–02/08 · 单相半波与全波整流 | evidence/2026-10-03_simulink-black-01-02/ | Planned |
+| 2026-10-05 | Simulink 黑库 03–04/08 · 三相整流与交交调压 | evidence/2026-10-05_simulink-black-03-04/ | Planned |
+| 2026-10-06 | 机器学习 01 · 线性负荷预测 baseline | evidence/2026-10-06_ml-load-forecasting-01/ | Planned |
+| 2026-10-06 | 机器学习 02 · EDA 与数据清理 | evidence/2026-10-06_ml-load-forecasting-02/ | Planned |
+| 2026-10-08 | Python 补全 2/8 · 列表、元组与字符串 | evidence/2026-10-08_python-complete-02/ | Planned |
+| 2026-10-10 | 电力电子本科 03/24 · Boost/Cuk 与纹波 | evidence/2026-10-10_power-electronics-undergrad-03/ | Planned |
+| 2026-10-10 | 电力电子本科 04/24 · 变换器直流模型 | evidence/2026-10-10_power-electronics-undergrad-04/ | Planned |
+| 2026-10-12 | Simulink 黑库 05–06/08 · Buck 与单端反激 | evidence/2026-10-12_simulink-black-05-06/ | Planned |
+| 2026-10-13 | Simulink 黑库 07–08/08 · 隔离正激与逆变控制 | evidence/2026-10-13_simulink-black-07-08/ | Planned |
+| 2026-10-13 | 机器学习 03 · 数据变换与时间序列特征 | evidence/2026-10-13_ml-load-forecasting-03/ | Planned |
+| 2026-10-15 | 机器学习 04 · 决策树与 SGD | evidence/2026-10-15_ml-load-forecasting-04/ | Planned |
+| 2026-10-17 | Python 补全 3/8 · 序列、字典与集合 | evidence/2026-10-17_python-complete-03/ | Planned |
+| 2026-10-17 | 电力电子本科 05–06/24 · 器件象限与二极管 | evidence/2026-10-17_power-electronics-undergrad-05-06/ | Planned |
+| 2026-10-19 | 电力电子本科 07–08/24 · MOSFET、BJT、IGBT、晶闸管 | evidence/2026-10-19_power-electronics-undergrad-07-08/ | Planned |
+| 2026-10-20 | Simulink 蓝库 01–02/10 · 器件静态与动态特性 | evidence/2026-10-20_simulink-blue-01-02/ | Planned |
+| 2026-10-22 | Simulink 蓝库 03–04/10 · 非隔离与单端隔离 DC-DC | evidence/2026-10-22_simulink-blue-03-04/ | Planned |
+| 2026-10-22 | 机器学习 05 · 预测指标与结果图 | evidence/2026-10-22_ml-load-forecasting-05/ | Planned |
+| 2026-10-24 | 机器学习 06 · 过拟合与偏差—方差 | evidence/2026-10-24_ml-load-forecasting-06/ | Planned |
+| 2026-10-24 | Python 补全 4/8 · 高阶函数、生成器与递归 | evidence/2026-10-24_python-complete-04/ | Planned |
+| 2026-10-26 | 电力电子本科 09–10/24 · 宽禁带器件与 DCM | evidence/2026-10-26_power-electronics-undergrad-09-10/ | Planned |
+| 2026-10-27 | 电力电子本科 11–12/24 · 磁性元件与拓扑衍生 | evidence/2026-10-27_power-electronics-undergrad-11-12/ | Planned |
+| 2026-10-29 | Simulink 蓝库 05–06/10 · 单相与三相独立逆变 | evidence/2026-10-29_simulink-blue-05-06/ | Planned |
+| 2026-10-29 | Simulink 蓝库 07/10 · 三相相控整流 | evidence/2026-10-29_simulink-blue-07/ | Planned |
+| 2026-10-31 | 机器学习 07 · 时间顺序验证与泄漏检查 | evidence/2026-10-31_ml-load-forecasting-07/ | Planned |
+| 2026-10-31 | 机器学习 08 · Bagging、Boosting 与树集成 | evidence/2026-10-31_ml-load-forecasting-08/ | Planned |
+| 2026-11-02 | Python 补全 5/8 · 面向对象基础 | evidence/2026-11-02_python-complete-05/ | Planned |
+| 2026-11-03 | 电力电子本科 13–14/24 · 非隔离 DC/DC 与正激 | evidence/2026-11-03_power-electronics-undergrad-13-14/ | Planned |
+| 2026-11-05 | 电力电子本科 15–17/24 · 隔离 Buck、反激与隔离 Boost | evidence/2026-11-05_power-electronics-undergrad-15-17/ | Planned |
+| 2026-11-05 | Simulink 蓝库 08/10 · PWM 并网逆变与整流 | evidence/2026-11-05_simulink-blue-08/ | Planned |
+| 2026-11-07 | Simulink 蓝库 09–10/10 · 交流调压与变频 | evidence/2026-11-07_simulink-blue-09-10/ | Planned |
+| 2026-11-09 | 机器学习 09 · 可复用时间序列特征管线 | evidence/2026-11-09_ml-load-forecasting-09/ | Planned |
+| 2026-11-09 | 机器学习 10 · 统一负荷预测 benchmark | evidence/2026-11-09_ml-load-forecasting-10/ | Planned |
+| 2026-11-10 | Python 补全 6/8 · 魔法方法与对象协议 | evidence/2026-11-10_python-complete-06/ | Planned |
+| 2026-11-12 | 电力电子本科 18–19/24 · 单相/三相不控整流 | evidence/2026-11-12_power-electronics-undergrad-18-19/ | Planned |
+| 2026-11-12 | 电力电子本科 20–21/24 · 单相/三相可控整流 | evidence/2026-11-12_power-electronics-undergrad-20-21/ | Planned |
+| 2026-11-14 | Simulink 综合 · 独立复现与参数扫描 | evidence/2026-11-14_simulink-integrated-replication/ | Planned |
+| 2026-11-16 | Simulink 综合 · 作品集、复盘与补漏 | evidence/2026-11-16_simulink-portfolio-review/ | Planned |
+| 2026-11-16 | 机器学习 11 · 时间序列调参与实验记录 | evidence/2026-11-16_ml-load-forecasting-11/ | Planned |
+| 2026-11-17 | 机器学习 12 · RNN 与序列窗口 | evidence/2026-11-17_ml-load-forecasting-12/ | Planned |
+| 2026-11-19 | Python 补全 7/8 · 描述符、装饰器与元类 | evidence/2026-11-19_python-complete-07/ | Planned |
+| 2026-11-19 | 电力电子本科 22/24 · 谐波与功率因素矫正 | evidence/2026-11-19_power-electronics-undergrad-22/ | Planned |
+| 2026-11-21 | 电力电子本科 23/24 · 方波逆变器 | evidence/2026-11-21_power-electronics-undergrad-23/ | Planned |
+| 2026-11-23 | 机器学习 13 · RNN 实现与 LSTM | evidence/2026-11-23_ml-load-forecasting-13/ | Planned |
+| 2026-11-23 | 机器学习 14 · 基线/LSTM 比较与不确定性初稿 | evidence/2026-11-23_ml-load-forecasting-14/ | Planned |
+| 2026-11-24 | Python 补全 8/8 · 模块、包与科研小项目 | evidence/2026-11-24_python-complete-08/ | Planned |
+| 2026-11-26 | 电力电子本科 24/24 · PWM 逆变与总复盘 | evidence/2026-11-26_power-electronics-undergrad-24/ | Planned |
+| 2026-11-26 | 电力电子（研）01/16 · 课程框架与研究映射 | evidence/2026-11-26_power-electronics-graduate-01/ | Planned |
+| 2026-11-28 | 电力电子（研）02/16 · 本科知识诊断 | evidence/2026-11-28_power-electronics-graduate-02/ | Planned |
+| 2026-11-30 | 电力电子（研）03/16 · 谐振介绍与串联基本模态 | evidence/2026-11-30_power-electronics-graduate-03/ | Planned |
+| 2026-11-30 | 电力电子（研）04/16 · 串联谐振轨迹、增益与设计 | evidence/2026-11-30_power-electronics-graduate-04/ | Planned |
+| 2026-12-01 | 电力电子（研）05/16 · PRC、LCC 与 LLC 背景 | evidence/2026-12-01_power-electronics-graduate-05/ | Planned |
+| 2026-12-03 | 电力电子（研）06/16 · LLC 模态分析 | evidence/2026-12-03_power-electronics-graduate-06/ | Planned |
+| 2026-12-05 | 电力电子（研）07/16 · LLC 优化设计 | evidence/2026-12-05_power-electronics-graduate-07/ | Planned |
+| 2026-12-05 | 电力电子（研）08/16 · 同步整流、保护与轨迹控制 | evidence/2026-12-05_power-electronics-graduate-08/ | Planned |
+| 2026-12-07 | 电力电子（研）09/16 · 多元件谐振变换器 | evidence/2026-12-07_power-electronics-graduate-09/ | Planned |
+| 2026-12-08 | 电力电子（研）10/16 · ZCS 半波与全波 | evidence/2026-12-08_power-electronics-graduate-10/ | Planned |
+| 2026-12-08 | 电力电子（研）11/16 · ZVS 与多谐振 | evidence/2026-12-08_power-electronics-graduate-11/ | Planned |
+| 2026-12-10 | 电力电子（研）12/16 · PWM 软开关与 ZVT | evidence/2026-12-10_power-electronics-graduate-12/ | Planned |
+| 2026-12-12 | 电力电子（研）13/16 · 无线电能传输历史与耦合器模型 | evidence/2026-12-12_power-electronics-graduate-13/ | Planned |
+| 2026-12-14 | 电力电子（研）14/16 · 耦合器结构与补偿网络 | evidence/2026-12-14_power-electronics-graduate-14/ | Planned |
+| 2026-12-14 | 电力电子（研）15/16 · 最优效率、CPT 与高频变换 | evidence/2026-12-14_power-electronics-graduate-15/ | Planned |
+| 2026-12-19 | 课程收口缓冲 · 补漏与年审证据归档 | evidence/2026-12-19_course-completion-buffer-20261218/ | Planned |
+| 2026-12-17 | 电力电子（研）16/16 · 数据中心 PSU 研究映射 | evidence/2026-12-17_power-electronics-graduate-16/ | Planned |
 
-## 5. 压缩周期的年审检查点
+文件命名YYYY-MM-DD_topic_artifact-v01。每个模块的具体成果要求见COURSE_ROADMAP.md；课程分段不要求重复产出。同一结果可以用于代码练习与科研，但时间不可重复计算。每周三带一张图、一张表或一个明确决策问题给导师。
 
-| 截止日期 | 汇总成果 | 年审价值 |
-|---|---|---|
-| 2026-11-28 | 课程映射、先修诊断、SRC 模态与设计包 | 证明压缩学习仍有明确研究目的和核查证据 |
-| 2026-12-05 | LLC 拓扑、模态、设计、保护与控制包 | 证明已从概念进入设计与权衡 |
-| 2026-12-12 | 多元件、ZCS/ZVS 与 PWM 软开关对照 | 证明分析和技术选择能力 |
-| 2026-12-19 | 数据中心 PSU 一页总图 + 模型/波形包 | 形成可放入年审附件的技术能力证据 |
-
-每个检查点压缩成一页：`问题 → 做了什么 → 证据 → 发现 → 局限 → 下一步`。如果课程成果不能连接到负荷预测、配网影响或数据中心连接研究，只放入 training 记录，不把它包装成主要研究结果。
-
-## 6. 年审材料建议结构
-
-1. **研究问题与演化**：从负荷预测不确定性，到配网影响，再到连接/运行决策；
-2. **文献与证据基础**：来源、分类、关键 gap 和证据质量；
-3. **数据与方法**：数据来源、测量边界、时间切分、基线、指标与不确定性；
-4. **已完成结果**：图表、代码、实验、负面结果及其解释；
-5. **技术训练如何服务研究**：Python、ML、MATLAB/Simulink、电力电子，不按观看时长计量；
-6. **导师反馈与决策记录**：每次组会改变了什么；
-7. **下一阶段计划与风险**：数据、方法、范围、时间与缓解措施。
-
-## 7. 真实性边界
-
-- `Planned` 不能写成“已掌握”或“已完成”；
-- 合成数据结果只能证明代码可运行，不能作为研究结论；
-- 课程复现必须区分教师示例和自己的独立工作；
-- 负面结果、失败模型和被否定假设同样是证据，但必须记录条件和原因；
-- 预测误差改善只有在网络影响或决策价值被验证后，才能声称对配网/接网有意义。
+课程证据只证明训练，不代替研究贡献。合成数据不作为研究结论；课程示例与独立复现须区分。只有证据链接可打开才标记Evidence ready。误差降低不能直接声称改善配网决策，需要另做网络影响验证。

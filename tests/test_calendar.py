@@ -98,7 +98,7 @@ class CalendarTests(unittest.TestCase):
         self.assertTrue(simulator_ids <= event_ids)
         self.assertEqual(
             14,
-            sum(event_id.startswith("ml-load-forecasting-") for event_id in event_ids),
+            sum(event_id.startswith("ml-load-forecasting-") and "-part" not in event_id for event_id in event_ids),
         )
 
     def test_graduate_course_and_annual_review_outputs(self) -> None:
@@ -112,9 +112,9 @@ class CalendarTests(unittest.TestCase):
             for event in self.payload["events"]
             if event["id"].startswith("load-forecast-freeze-")
         ]
-        self.assertEqual(16, len(graduate))
-        self.assertEqual("2026-11-23T18:30:00", min(event["start"] for event in graduate))
-        self.assertEqual("2026-12-19T10:00:00", max(event["start"] for event in graduate))
+        self.assertEqual(16, len({event.get("course_id", event["id"]) for event in graduate}))
+        self.assertEqual("2026-11-26T19:15:00", min(event["start"] for event in graduate))
+        self.assertLessEqual(max(event["end"] for event in graduate), "2026-12-19T22:45:00")
         self.assertTrue(all("输出" in event["description"] for event in graduate))
         self.assertEqual(5, len(freezes))
         self.assertTrue((ROOT / "LOAD_FORECAST_SPRINT.md").is_file())
@@ -133,27 +133,42 @@ class CalendarTests(unittest.TestCase):
             for event in self.payload["events"]
             if event["id"].startswith(prefixes)
         ]
-        self.assertEqual(11, sum(event["id"].startswith("python-") for event in self_study))
+        self.assertEqual(11, len({event.get("course_id", event["id"]) for event in self_study if event["id"].startswith("python-")}))
         self.assertLessEqual(
             max(datetime.fromisoformat(event["end"]) for event in self_study),
-            datetime(2026, 12, 19, 12, 30),
+            datetime(2026, 12, 19, 22, 45),
         )
 
     def test_research_blocks_pause_for_winter_break(self) -> None:
-        self.assertIn("research-core-monday-2026-27@skun-research-time-workstation", self.calendar)
+        self.assertIn("research-protected-monday-am@skun-research-time-workstation", self.calendar)
         self.assertIn(
             "EXDATE;TZID=Europe/London:20261221T090000,20261228T090000",
             self.calendar.replace("\r\n ", ""),
         )
 
-    def test_second_research_stage_continues_without_exam_break(self) -> None:
-        event = next(
-            item
-            for item in self.payload["events"]
-            if item["id"] == "research-core-thursday-2027-spring-summer"
-        )
-        self.assertEqual("FREQ=WEEKLY;BYDAY=TH;COUNT=24", event["rrule"])
-        self.assertNotIn("exdate", event)
+    def test_new_weekly_rules(self) -> None:
+        from collections import defaultdict
+        totals = defaultdict(float)
+        for e in self.payload["events"]:
+            if e["id"].startswith("research-protected-"):
+                start = datetime.fromisoformat(e["start"])
+                end = datetime.fromisoformat(e["end"])
+                totals[start.weekday()] += (end - start).total_seconds() / 3600
+        self.assertEqual({0: 4, 1: 4, 2: 2, 3: 4, 4: 4, 5: 4, 6: 4}, dict(totals))
+        english = [e for e in self.payload["events"] if e["id"].startswith("english-course-")]
+        self.assertEqual({2, 4, 6}, {datetime.fromisoformat(e["start"]).weekday() for e in english})
+        self.assertTrue(all(e["start"].endswith("T19:00:00") and e["end"].endswith("T21:00:00") for e in english))
+        for e in self.payload["events"]:
+            if e.get("course_id"):
+                self.assertGreaterEqual(e["start"][11:], "19:00:00")
+                self.assertLessEqual(e["end"][11:], "22:45:00")
+                self.assertEqual(e["start"][:10], e["end"][:10])
+                self.assertIn(datetime.fromisoformat(e["start"]).weekday(), (0, 1, 3, 5))
+
+    def test_learning_duration_preserved(self) -> None:
+        total = sum((datetime.fromisoformat(e["end"]) - datetime.fromisoformat(e["start"])).total_seconds() / 3600
+                    for e in self.payload["events"] if e.get("course_id"))
+        self.assertEqual(161.75, total)
 
     def test_expanded_schedule_has_no_time_conflicts(self) -> None:
         end_of_check = datetime(2027, 7, 10)
